@@ -147,15 +147,23 @@ async def price(ctx, *, item_name: str = None):
                 change_48h = item.get('changeLast48hPercent', 'N/A')
                 link = item.get('link', '')
                 
-                # Format sellFor prices (best price)
+                # Format sellFor prices
                 sell_for = item.get('sellFor', [])
+                
+                # Best overall sell price (usually Flea)
                 best_sell = max(sell_for, key=lambda x: x['price']) if sell_for else None
                 best_sell_str = f"{best_sell['price']} ({best_sell['source']})" if best_sell else "N/A"
+                
+                # Best trader sell price
+                trader_prices = [x for x in sell_for if x['source'] != 'fleaMarket']
+                best_trader = max(trader_prices, key=lambda x: x['price']) if trader_prices else None
+                best_trader_str = f"{best_trader['price']} ({best_trader['source']})" if best_trader else "N/A"
 
                 embed = discord.Embed(title=f"{name} ({short_name})", url=link, color=0x00ff00)
                 embed.add_field(name="Avg 24h Price", value=f"{avg_price} ₽", inline=True)
                 embed.add_field(name="Base Price", value=f"{base_price} ₽", inline=True)
                 embed.add_field(name="Best Sell", value=f"{best_sell_str}", inline=True)
+                embed.add_field(name="Best Trader", value=f"{best_trader_str}", inline=True)
                 embed.add_field(name="48h Change", value=f"{change_48h}%", inline=True)
                 
                 await ctx.send(embed=embed)
