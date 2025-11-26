@@ -239,6 +239,18 @@ async def bosses(ctx, *, query: str = None):
         logger.error(f"Error processing bosses command: {e}", exc_info=True)
         await ctx.send(f"An error occurred: {str(e)}")
 
+@bot.command(name='help', aliases=['h'])
+async def help_command(ctx):
+    """Show available commands"""
+    help_text = (
+        "🛠️ **Comandos disponibles:**\n"
+        "> Puedes usar `!` o `$` como prefijo\n"
+        "`!price <item>` o `!p <item>` → Muestra precios del mercado.\n"
+        "`!bosses` o `!b` → Muestra botones para elegir mapa.\n"
+        "`!bosses <mapa>` → Muestra bosses de ese mapa.\n"
+        "`!bosses <nombre>` → Busca un boss por nombre.\n"
+        "`!bosses all` → Lista compacta de todos los bosses.\n"
+        "`!ping` → Verifica si el bot está activo.\n"
     )
     await ctx.send(help_text)
 
