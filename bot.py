@@ -21,6 +21,30 @@ intents.message_content = True
 bot = commands.Bot(command_prefix=['!', '$'], intents=intents, help_command=None)
 tarkov_client = TarkovClient()
 
+# Cache for maps data
+maps_cache = {
+    'data': None,
+    'timestamp': 0
+}
+CACHE_DURATION = 300  # 5 minutes in seconds
+
+def get_maps_data():
+    """Get maps data with caching"""
+    import time
+    current_time = time.time()
+    
+    # Check if cache is valid
+    if maps_cache['data'] and (current_time - maps_cache['timestamp']) < CACHE_DURATION:
+        logger.info("Using cached maps data")
+        return maps_cache['data']
+    
+    # Fetch fresh data
+    logger.info("Fetching fresh maps data from API")
+    maps_data = tarkov_client.get_maps_and_bosses()
+    maps_cache['data'] = maps_data
+    maps_cache['timestamp'] = current_time
+    return maps_data
+
 def group_bosses(boss_list):
     """Group bosses by name and combine their spawn locations"""
     grouped = {}
@@ -146,7 +170,7 @@ async def bosses(ctx, *, query: str = None):
     logger.info(f'Bosses command received from {ctx.author} with query: {query}')
     
     try:
-        maps_data = tarkov_client.get_maps_and_bosses()
+        maps_data = get_maps_data()
         
         if not maps_data:
             await ctx.send("❌ No se pudo obtener información de mapas.")
