@@ -21,6 +21,23 @@ intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents, help_command=None)
 tarkov_client = TarkovClient()
 
+def group_bosses(boss_list):
+    """Group bosses by name and combine their spawn locations"""
+    grouped = {}
+    for boss in boss_list:
+        name = boss['name']
+        if name not in grouped:
+            grouped[name] = {
+                'name': name,
+                'spawnChance': boss['spawnChance'],
+                'spawnLocations': []
+            }
+        # Add locations from this boss entry
+        grouped[name]['spawnLocations'].extend(boss.get('spawnLocations', []))
+    
+    return list(grouped.values())
+
+
 class MapButtonView(discord.ui.View):
     def __init__(self, maps_data):
         super().__init__(timeout=60)
@@ -37,7 +54,7 @@ class MapButtonView(discord.ui.View):
 
     def make_callback(self, map_name, map_data):
         async def callback(interaction: discord.Interaction):
-            boss_list = map_data.get('bosses', [])
+            boss_list = group_bosses(map_data.get('bosses', []))
             response = f"📍 **{map_name}**\n"
             
             for boss in boss_list:
@@ -139,7 +156,7 @@ async def bosses(ctx, *, query: str = None):
         if query and query.strip().lower() == "all":
             response = "📍 **Bosses en Todos los Mapas**\n"
             for map_data in maps_data:
-                boss_list = map_data.get('bosses', [])
+                boss_list = group_bosses(map_data.get('bosses', []))
                 if not boss_list:
                     continue
                 
@@ -163,7 +180,7 @@ async def bosses(ctx, *, query: str = None):
         # Search by exact map name
         for map_data in maps_data:
             if map_data['name'].lower() == query.lower():
-                boss_list = map_data.get('bosses', [])
+                boss_list = group_bosses(map_data.get('bosses', []))
                 response = f"📍 **Bosses en {map_data['name']}**\n"
                 
                 for boss in boss_list:
@@ -189,7 +206,8 @@ async def bosses(ctx, *, query: str = None):
         # Search by boss name
         found = []
         for map_data in maps_data:
-            for boss in map_data.get('bosses', []):
+            grouped = group_bosses(map_data.get('bosses', []))
+            for boss in grouped:
                 if boss['name'].lower() == query.lower():
                     found.append((map_data['name'], boss))
         
