@@ -3,6 +3,14 @@ import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 from tarkov_client import TarkovClient
+import logging
+
+# Setup logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger('tarkov_bot')
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -15,12 +23,35 @@ tarkov_client = TarkovClient()
 
 @bot.event
 async def on_ready():
-    print(f'{bot.user} has connected to Discord!')
+    logger.info(f'{bot.user} has connected to Discord!')
+    logger.info(f'Bot is in {len(bot.guilds)} guilds')
 
-@bot.command(name='price')
-async def price(ctx, *, item_name):
+@bot.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.CommandNotFound):
+        return
+    logger.error(f'Error in command {ctx.command}: {error}')
+    await ctx.send(f"An error occurred: {str(error)}")
+
+@bot.command(name='ping')
+async def ping(ctx):
+    """Simple ping command to test if bot is responding"""
+    logger.info(f'Ping command received from {ctx.author}')
+    await ctx.send('🏓 Pong!')
+
+@bot.command(name='price', aliases=['p'])
+async def price(ctx, *, item_name: str = None):
+    """Get price information for a Tarkov item"""
+    logger.info(f'Price command received from {ctx.author} for item: {item_name}')
+    
+    if not item_name:
+        await ctx.send("Please provide an item name. Usage: `!price <item_name>`")
+        return
+    
     try:
         items = tarkov_client.get_item_price(item_name)
+        logger.info(f'Found {len(items) if items else 0} items for query: {item_name}')
+        
         if not items:
             await ctx.send(f"No items found matching '{item_name}'.")
             return
@@ -46,13 +77,16 @@ async def price(ctx, *, item_name):
             embed.add_field(name="48h Change", value=f"{change_48h}%", inline=True)
             
             await ctx.send(embed=embed)
+            logger.info(f'Sent price info for {name}')
 
     except Exception as e:
+        logger.error(f"Error processing price command: {e}", exc_info=True)
         await ctx.send(f"An error occurred: {str(e)}")
-        print(f"Error: {e}")
 
 if __name__ == "__main__":
     if not TOKEN or TOKEN == "your_token_here":
+        logger.error("DISCORD_TOKEN not set in .env file.")
         print("Error: DISCORD_TOKEN not set in .env file.")
     else:
+        logger.info("Starting bot...")
         bot.run(TOKEN)
