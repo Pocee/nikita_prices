@@ -31,3 +31,26 @@ class TarkovClient:
         """
         result = self.run_query(query)
         return result.get('data', {}).get('itemsByName', [])
+    
+    def get_maps_and_bosses(self):
+        """Get all maps with their boss spawn information"""
+        query = """
+        {
+            maps {
+                name
+                normalizedName
+                bosses {
+                    name
+                    normalizedName
+                    spawnChance
+                    spawnLocations {
+                        name
+                        chance
+                    }
+                }
+            }
+        }
+        """
+        result = self.run_query(query)
+        return result.get('data', {}).get('maps', [])
+
