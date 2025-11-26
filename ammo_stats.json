@@ -1,0 +1,3061 @@
+{
+  "5.25MM BUCKSHOT": {
+    "caliber": "12 Gauge Shot",
+    "damage": "8x37",
+    "penetration": "1",
+    "fragmentation": "0%",
+    "recoil": "108",
+    "accuracy": "9",
+    "effectiveDistance": "330",
+    "maxHeadshotDistance": "3",
+    "speed": "3",
+    "armorDamage": {
+      "class1": "3",
+      "class2": "3",
+      "class3": "3",
+      "class4": "3",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "8.5MM MAGNUM BUCKSHOT": {
+    "caliber": "12 Gauge Shot",
+    "damage": "8x50",
+    "penetration": "2",
+    "fragmentation": "0%",
+    "recoil": "115",
+    "accuracy": "−15%",
+    "effectiveDistance": "80",
+    "maxHeadshotDistance": "116",
+    "speed": "385",
+    "armorDamage": {
+      "class1": "3",
+      "class2": "3",
+      "class3": "3",
+      "class4": "3",
+      "class5": "3",
+      "class6": "3"
+    }
+  },
+  "6.5MM EXPRESS BUCKSHOT": {
+    "caliber": "12 Gauge Shot",
+    "damage": "9x35",
+    "penetration": "3",
+    "fragmentation": "0%",
+    "recoil": "15%",
+    "accuracy": "71",
+    "effectiveDistance": "Never",
+    "maxHeadshotDistance": "430",
+    "speed": "3",
+    "armorDamage": {
+      "class1": "3",
+      "class2": "3",
+      "class3": "3",
+      "class4": "3",
+      "class5": "3",
+      "class6": ""
+    }
+  },
+  "7MM BUCKSHOT": {
+    "caliber": "12 Gauge Shot",
+    "damage": "8x39",
+    "penetration": "3",
+    "fragmentation": "0%",
+    "recoil": "39",
+    "accuracy": "3",
+    "effectiveDistance": "415",
+    "maxHeadshotDistance": "3",
+    "speed": "3",
+    "armorDamage": {
+      "class1": "3",
+      "class2": "3",
+      "class3": "3",
+      "class4": "3",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "PIRANHA": {
+    "caliber": "12 Gauge Shot",
+    "damage": "10x25",
+    "penetration": "24",
+    "fragmentation": "0%",
+    "recoil": "−5%",
+    "accuracy": "-",
+    "effectiveDistance": "-",
+    "maxHeadshotDistance": "310",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "5",
+      "class3": "4",
+      "class4": "4",
+      "class5": "4",
+      "class6": ""
+    }
+  },
+  "FLECHETTE": {
+    "caliber": "20 Gauge",
+    "damage": "8x20",
+    "penetration": "24",
+    "fragmentation": "0%",
+    "recoil": "−10%",
+    "accuracy": "-",
+    "effectiveDistance": "-",
+    "maxHeadshotDistance": "400",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "5",
+      "class3": "4",
+      "class4": "4",
+      "class5": "4",
+      "class6": ""
+    }
+  },
+  "RIP": {
+    "caliber": "9x19mm",
+    "damage": "102",
+    "penetration": "2",
+    "fragmentation": "100%",
+    "recoil": "5",
+    "accuracy": "10%",
+    "effectiveDistance": "290",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "381",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "SUPERFORMANCE HP SLUG": {
+    "caliber": "12 Gauge Slugs",
+    "damage": "220",
+    "penetration": "5",
+    "fragmentation": "39%",
+    "recoil": "−15",
+    "accuracy": "170%",
+    "effectiveDistance": "344",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "594",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "GRIZZLY 40 SLUG": {
+    "caliber": "12 Gauge Slugs",
+    "damage": "190",
+    "penetration": "12",
+    "fragmentation": "12%",
+    "recoil": "20",
+    "accuracy": "80%",
+    "effectiveDistance": "840",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "390",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "2",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "COPPER SABOT HP SLUG": {
+    "caliber": "12 Gauge Slugs",
+    "damage": "206",
+    "penetration": "14",
+    "fragmentation": "38%",
+    "recoil": "10",
+    "accuracy": "150%",
+    "effectiveDistance": "305",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "442",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "3",
+      "class3": "1",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "LEAD SLUG": {
+    "caliber": "12 Gauge Slugs",
+    "damage": "167",
+    "penetration": "15",
+    "fragmentation": "20%",
+    "recoil": "120%",
+    "accuracy": "487",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "370",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "4",
+      "class2": "1",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": ""
+    }
+  },
+  "DUAL SABOT SLUG": {
+    "caliber": "12 Gauge Slugs",
+    "damage": "2x85",
+    "penetration": "17",
+    "fragmentation": "10%",
+    "recoil": "15",
+    "accuracy": "110%",
+    "effectiveDistance": "251",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "415",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "5",
+      "class3": "2",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "POLEVA-3 SLUG": {
+    "caliber": "20 Gauge",
+    "damage": "120",
+    "penetration": "14",
+    "fragmentation": "20%",
+    "recoil": "−15",
+    "accuracy": "110%",
+    "effectiveDistance": "517",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "425",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "2",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "FTX CUSTOM LITE SLUG": {
+    "caliber": "12 Gauge Slugs",
+    "damage": "183",
+    "penetration": "20",
+    "fragmentation": "10%",
+    "recoil": "−25",
+    "accuracy": "135%",
+    "effectiveDistance": "498",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "480",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "2",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "POLEVA-6U SLUG": {
+    "caliber": "20 Gauge",
+    "damage": "135",
+    "penetration": "17",
+    "fragmentation": "15%",
+    "recoil": "−10",
+    "accuracy": "110%",
+    "effectiveDistance": "438",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "445",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "5",
+      "class3": "1",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "MAKESHIFT .50 BMG SLUG (TRACER)": {
+    "caliber": "12 Gauge Slugs",
+    "damage": "197",
+    "penetration": "26",
+    "fragmentation": "5%",
+    "recoil": "25",
+    "accuracy": "90%",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "410",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "5",
+      "class4": "3",
+      "class5": "1",
+      "class6": "0"
+    }
+  },
+  "AP-20 ARMOR-PIERCING SLUG": {
+    "caliber": "12 Gauge Slugs",
+    "damage": "164",
+    "penetration": "37",
+    "fragmentation": "3%",
+    "recoil": "50",
+    "accuracy": "80%",
+    "effectiveDistance": "905",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "510",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "5",
+      "class5": "4",
+      "class6": "3"
+    }
+  },
+  "5.6MM BUCKSHOT": {
+    "caliber": "20 Gauge",
+    "damage": "8x26",
+    "penetration": "1",
+    "fragmentation": "0%",
+    "recoil": "10",
+    "accuracy": "−10%",
+    "effectiveDistance": "124",
+    "maxHeadshotDistance": "Never",
+    "speed": "340",
+    "armorDamage": {
+      "class1": "3",
+      "class2": "3",
+      "class3": "3",
+      "class4": "3",
+      "class5": "3",
+      "class6": "3"
+    }
+  },
+  "6.2MM BUCKSHOT": {
+    "caliber": "20 Gauge",
+    "damage": "8x22",
+    "penetration": "2",
+    "fragmentation": "0%",
+    "recoil": "100",
+    "accuracy": "Never",
+    "effectiveDistance": "410",
+    "maxHeadshotDistance": "3",
+    "speed": "3",
+    "armorDamage": {
+      "class1": "3",
+      "class2": "3",
+      "class3": "3",
+      "class4": "3",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "7.5MM BUCKSHOT": {
+    "caliber": "20 Gauge",
+    "damage": "8x25",
+    "penetration": "3",
+    "fragmentation": "0%",
+    "recoil": "181",
+    "accuracy": "Never",
+    "effectiveDistance": "475",
+    "maxHeadshotDistance": "3",
+    "speed": "3",
+    "armorDamage": {
+      "class1": "3",
+      "class2": "3",
+      "class3": "3",
+      "class4": "3",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "7.3MM BUCKSHOT": {
+    "caliber": "20 Gauge",
+    "damage": "9x23",
+    "penetration": "3",
+    "fragmentation": "0%",
+    "recoil": "15",
+    "accuracy": "86",
+    "effectiveDistance": "Never",
+    "maxHeadshotDistance": "430",
+    "speed": "3",
+    "armorDamage": {
+      "class1": "3",
+      "class2": "3",
+      "class3": "3",
+      "class4": "3",
+      "class5": "3",
+      "class6": ""
+    }
+  },
+  "DEVASTATOR SLUG": {
+    "caliber": "20 Gauge",
+    "damage": "198",
+    "penetration": "5",
+    "fragmentation": "100%",
+    "recoil": "30",
+    "accuracy": "125%",
+    "effectiveDistance": "109",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "405",
+    "armorDamage": {
+      "class1": "1",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "STAR SLUG": {
+    "caliber": "20 Gauge",
+    "damage": "154",
+    "penetration": "16",
+    "fragmentation": "10%",
+    "recoil": "5",
+    "accuracy": "130%",
+    "effectiveDistance": "416",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "415",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "5",
+      "class3": "1",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "DANGEROUS GAME SLUG": {
+    "caliber": "20 Gauge",
+    "damage": "143",
+    "penetration": "25",
+    "fragmentation": "3%",
+    "recoil": "40",
+    "accuracy": "60%",
+    "effectiveDistance": "-",
+    "maxHeadshotDistance": "-",
+    "speed": "476",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "5",
+      "class4": "3",
+      "class5": "1",
+      "class6": "0"
+    }
+  },
+  "TSS ARMOR PIERCING SLUG": {
+    "caliber": "20 Gauge",
+    "damage": "155",
+    "penetration": "30",
+    "fragmentation": "2%",
+    "recoil": "48",
+    "accuracy": "64%",
+    "effectiveDistance": "-",
+    "maxHeadshotDistance": "-",
+    "speed": "482",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "3",
+      "class5": "1",
+      "class6": "0"
+    }
+  },
+  "ZVEZDA FLASHBANG ROUND": {
+    "caliber": "23x75 mm",
+    "damage": "0",
+    "penetration": "0",
+    "fragmentation": "20%",
+    "recoil": "0",
+    "accuracy": "0",
+    "effectiveDistance": "0",
+    "maxHeadshotDistance": "0",
+    "speed": "0",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "",
+      "class3": "",
+      "class4": "",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "SHRAPNEL-25 BUCKSHOT": {
+    "caliber": "23x75 mm",
+    "damage": "8x78",
+    "penetration": "10",
+    "fragmentation": "0%",
+    "recoil": "10",
+    "accuracy": "20%",
+    "effectiveDistance": "83",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "375",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "4",
+      "class3": "3",
+      "class4": "3",
+      "class5": "3",
+      "class6": "3"
+    }
+  },
+  "SHRAPNEL-10 BUCKSHOT": {
+    "caliber": "23x75 mm",
+    "damage": "8x87",
+    "penetration": "11",
+    "fragmentation": "0%",
+    "recoil": "106",
+    "accuracy": ">1KM",
+    "effectiveDistance": "270",
+    "maxHeadshotDistance": "6",
+    "speed": "4",
+    "armorDamage": {
+      "class1": "3",
+      "class2": "3",
+      "class3": "3",
+      "class4": "3",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "BARRIKADA SLUG": {
+    "caliber": "23x75 mm",
+    "damage": "192",
+    "penetration": "39",
+    "fragmentation": "20%",
+    "recoil": "25",
+    "accuracy": "−5%",
+    "effectiveDistance": "974",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "420",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "4",
+      "class6": "4"
+    }
+  },
+  "PM SP8 GZH": {
+    "caliber": "9x18mm",
+    "damage": "67",
+    "penetration": "1",
+    "fragmentation": "60%",
+    "recoil": "412",
+    "accuracy": ">1KM",
+    "effectiveDistance": "250",
+    "maxHeadshotDistance": "0",
+    "speed": "0",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "PM SP7 GZH": {
+    "caliber": "9x18mm",
+    "damage": "77",
+    "penetration": "2",
+    "fragmentation": "2%",
+    "recoil": "229",
+    "accuracy": ">1KM",
+    "effectiveDistance": "420",
+    "maxHeadshotDistance": "0",
+    "speed": "0",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "PM PSV": {
+    "caliber": "9x18mm",
+    "damage": "69",
+    "penetration": "3",
+    "fragmentation": "40%",
+    "recoil": "606",
+    "accuracy": ">1KM",
+    "effectiveDistance": "280",
+    "maxHeadshotDistance": "0",
+    "speed": "0",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "PM P GZH": {
+    "caliber": "9x18mm",
+    "damage": "50",
+    "penetration": "5",
+    "fragmentation": "25%",
+    "recoil": "478",
+    "accuracy": "638",
+    "effectiveDistance": "302",
+    "maxHeadshotDistance": "2",
+    "speed": "0",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "PM PSO GZH": {
+    "caliber": "9x18mm",
+    "damage": "54",
+    "penetration": "5",
+    "fragmentation": "35%",
+    "recoil": "10%",
+    "accuracy": "459",
+    "effectiveDistance": "818",
+    "maxHeadshotDistance": "315",
+    "speed": "2",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": ""
+    }
+  },
+  "PM PS GS PPO": {
+    "caliber": "9x18mm",
+    "damage": "55",
+    "penetration": "6",
+    "fragmentation": "25%",
+    "recoil": "467",
+    "accuracy": "905",
+    "effectiveDistance": "330",
+    "maxHeadshotDistance": "3",
+    "speed": "0",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "PM PRS GS": {
+    "caliber": "9x18mm",
+    "damage": "58",
+    "penetration": "6",
+    "fragmentation": "30%",
+    "recoil": "478",
+    "accuracy": ">1KM",
+    "effectiveDistance": "302",
+    "maxHeadshotDistance": "3",
+    "speed": "0",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "PM PPE GZH": {
+    "caliber": "9x18mm",
+    "damage": "61",
+    "penetration": "7",
+    "fragmentation": "35%",
+    "recoil": "438",
+    "accuracy": ">1KM",
+    "effectiveDistance": "297",
+    "maxHeadshotDistance": "4",
+    "speed": "0",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "PM PPT GZH (TRACER)": {
+    "caliber": "9x18mm",
+    "damage": "59",
+    "penetration": "8",
+    "fragmentation": "17%",
+    "recoil": "−7",
+    "accuracy": "−5%",
+    "effectiveDistance": "495",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "301",
+    "armorDamage": {
+      "class1": "5",
+      "class2": "1",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "PM PST GZH": {
+    "caliber": "9x18mm",
+    "damage": "50",
+    "penetration": "12",
+    "fragmentation": "20%",
+    "recoil": "462",
+    "accuracy": "615",
+    "effectiveDistance": "298",
+    "maxHeadshotDistance": "6",
+    "speed": "1",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "PM RG028 GZH": {
+    "caliber": "9x18mm",
+    "damage": "65",
+    "penetration": "13",
+    "fragmentation": "2%",
+    "recoil": "476",
+    "accuracy": ">1KM",
+    "effectiveDistance": "330",
+    "maxHeadshotDistance": "6",
+    "speed": "2",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "PM BZHT GZH": {
+    "caliber": "9x18mm",
+    "damage": "53",
+    "penetration": "18",
+    "fragmentation": "17%",
+    "recoil": "303",
+    "accuracy": "511",
+    "effectiveDistance": "325",
+    "maxHeadshotDistance": "6",
+    "speed": "5",
+    "armorDamage": {
+      "class1": "1",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "PMM PSTM GZH": {
+    "caliber": "9x18mm",
+    "damage": "58",
+    "penetration": "24",
+    "fragmentation": "17%",
+    "recoil": "5",
+    "accuracy": "322",
+    "effectiveDistance": "919",
+    "maxHeadshotDistance": "420",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "4",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": ""
+    }
+  },
+  "PM PBM GZH": {
+    "caliber": "9x18mm",
+    "damage": "40",
+    "penetration": "28",
+    "fragmentation": "16%",
+    "recoil": "4",
+    "accuracy": "133",
+    "effectiveDistance": "26",
+    "maxHeadshotDistance": "519",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "5",
+      "class3": "1",
+      "class4": "0",
+      "class5": "0",
+      "class6": ""
+    }
+  },
+  "TT LRNPC": {
+    "caliber": "7.62x25mm",
+    "damage": "66",
+    "penetration": "7",
+    "fragmentation": "35%",
+    "recoil": "−10",
+    "accuracy": "10%",
+    "effectiveDistance": "457",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "385",
+    "armorDamage": {
+      "class1": "5",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "TT LRN": {
+    "caliber": "7.62x25mm",
+    "damage": "64",
+    "penetration": "8",
+    "fragmentation": "35%",
+    "recoil": "−5",
+    "accuracy": "5%",
+    "effectiveDistance": "579",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "375",
+    "armorDamage": {
+      "class1": "5",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "TT FMJ43": {
+    "caliber": "7.62x25mm",
+    "damage": "60",
+    "penetration": "11",
+    "fragmentation": "25%",
+    "recoil": "175",
+    "accuracy": "595",
+    "effectiveDistance": "427",
+    "maxHeadshotDistance": "6",
+    "speed": "1",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "TT AKBS": {
+    "caliber": "7.62x25mm",
+    "damage": "58",
+    "penetration": "12",
+    "fragmentation": "25%",
+    "recoil": "−15",
+    "accuracy": "15%",
+    "effectiveDistance": "419",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "425",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "2",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "TT P GL": {
+    "caliber": "7.62x25mm",
+    "damage": "58",
+    "penetration": "14",
+    "fragmentation": "25%",
+    "recoil": "411",
+    "accuracy": ">1KM",
+    "effectiveDistance": "430",
+    "maxHeadshotDistance": "6",
+    "speed": "3",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "TT PT GZH (TRACER)": {
+    "caliber": "7.62x25mm",
+    "damage": "55",
+    "penetration": "18",
+    "fragmentation": "17%",
+    "recoil": "−10%",
+    "accuracy": "426",
+    "effectiveDistance": "966",
+    "maxHeadshotDistance": "415",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "4",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": ""
+    }
+  },
+  "TT PST GZH": {
+    "caliber": "7.62x25mm",
+    "damage": "50",
+    "penetration": "25",
+    "fragmentation": "20%",
+    "recoil": "408",
+    "accuracy": "615",
+    "effectiveDistance": "430",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "4",
+      "class2": "1",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "QUAKEMAKER": {
+    "caliber": "9x19mm",
+    "damage": "85",
+    "penetration": "8",
+    "fragmentation": "10%",
+    "recoil": "10",
+    "accuracy": "10%",
+    "effectiveDistance": "725",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "290",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "1",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "PSO GZH": {
+    "caliber": "9x19mm",
+    "damage": "59",
+    "penetration": "10",
+    "fragmentation": "25%",
+    "recoil": "575",
+    "accuracy": ">1KM",
+    "effectiveDistance": "340",
+    "maxHeadshotDistance": "6",
+    "speed": "2",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "LUGER CCI": {
+    "caliber": "9x19mm",
+    "damage": "70",
+    "penetration": "10",
+    "fragmentation": "25%",
+    "recoil": "441",
+    "accuracy": ">1KM",
+    "effectiveDistance": "420",
+    "maxHeadshotDistance": "6",
+    "speed": "2",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "T GZH (TRACER)": {
+    "caliber": "9x19mm",
+    "damage": "58",
+    "penetration": "14",
+    "fragmentation": "15%",
+    "recoil": "−6",
+    "accuracy": "−5%",
+    "effectiveDistance": "428",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "365",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "3",
+      "class3": "1",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "M882": {
+    "caliber": "9x19mm",
+    "damage": "56",
+    "penetration": "18",
+    "fragmentation": "20%",
+    "recoil": "385",
+    "accuracy": "6",
+    "effectiveDistance": "5",
+    "maxHeadshotDistance": "2",
+    "speed": "0",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "",
+      "class4": "",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "PST GZH": {
+    "caliber": "9x19mm",
+    "damage": "54",
+    "penetration": "20",
+    "fragmentation": "15%",
+    "recoil": "194",
+    "accuracy": "452",
+    "effectiveDistance": "457",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "2",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "AP 6.3": {
+    "caliber": "9x19mm",
+    "damage": "52",
+    "penetration": "30",
+    "fragmentation": "5%",
+    "recoil": "453",
+    "accuracy": "776",
+    "effectiveDistance": "392",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "4",
+      "class3": "2",
+      "class4": "1",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "PBP GZH": {
+    "caliber": "9x19mm",
+    "damage": "44",
+    "penetration": "39",
+    "fragmentation": "5%",
+    "recoil": "5",
+    "accuracy": "5%",
+    "effectiveDistance": "92",
+    "maxHeadshotDistance": "220",
+    "speed": "560",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "5",
+      "class5": "4",
+      "class6": "3"
+    }
+  },
+  "ACP RIP": {
+    "caliber": ".45",
+    "damage": "130",
+    "penetration": "3",
+    "fragmentation": "100%",
+    "recoil": "−5%",
+    "accuracy": "290",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "293",
+    "speed": "1",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": ""
+    }
+  },
+  "ACP HYDRA-SHOK": {
+    "caliber": ".45",
+    "damage": "100",
+    "penetration": "13",
+    "fragmentation": "50%",
+    "recoil": "725",
+    "accuracy": ">1KM",
+    "effectiveDistance": "274",
+    "maxHeadshotDistance": "6",
+    "speed": "3",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "ACP LASERMATCH FMJ (TRACER)": {
+    "caliber": ".45",
+    "damage": "76",
+    "penetration": "19",
+    "fragmentation": "1%",
+    "recoil": "10%",
+    "accuracy": "575",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "290",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "5",
+      "class2": "1",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": ""
+    }
+  },
+  "ACP MATCH FMJ": {
+    "caliber": ".45",
+    "damage": "72",
+    "penetration": "25",
+    "fragmentation": "1%",
+    "recoil": "441",
+    "accuracy": ">1KM",
+    "effectiveDistance": "340",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "3",
+      "class2": "1",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "ACP AP": {
+    "caliber": ".45",
+    "damage": "66",
+    "penetration": "38",
+    "fragmentation": "1%",
+    "recoil": "7",
+    "accuracy": "−5%",
+    "effectiveDistance": "428",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "299",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "5",
+      "class5": "4",
+      "class6": "2"
+    }
+  },
+  "AE JHP": {
+    "caliber": ".50",
+    "damage": "147",
+    "penetration": "12",
+    "fragmentation": "70%",
+    "recoil": "5",
+    "accuracy": "−10%",
+    "effectiveDistance": "440",
+    "maxHeadshotDistance": "1",
+    "speed": "0",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "HAWK JSP": {
+    "caliber": ".50",
+    "damage": "122",
+    "penetration": "26",
+    "fragmentation": "30%",
+    "recoil": "2",
+    "accuracy": "−5%",
+    "effectiveDistance": "465",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "4",
+      "class2": "1",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "AE COPPER SOLID": {
+    "caliber": ".50",
+    "damage": "94",
+    "penetration": "33",
+    "fragmentation": "30%",
+    "recoil": "8",
+    "accuracy": "5%",
+    "effectiveDistance": "460",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "5",
+      "class3": "3",
+      "class4": "2",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "AE FMJ": {
+    "caliber": ".50",
+    "damage": "85",
+    "penetration": "40",
+    "fragmentation": "1%",
+    "recoil": "10",
+    "accuracy": "440",
+    "effectiveDistance": "6",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "4",
+      "class3": "3",
+      "class4": "",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "PE GZH": {
+    "caliber": "9x21mm",
+    "damage": "80",
+    "penetration": "15",
+    "fragmentation": "35%",
+    "recoil": "−5",
+    "accuracy": "194",
+    "effectiveDistance": "452",
+    "maxHeadshotDistance": "415",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "2",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": ""
+    }
+  },
+  "P GZH": {
+    "caliber": "9x21mm",
+    "damage": "65",
+    "penetration": "18",
+    "fragmentation": "30%",
+    "recoil": "−3",
+    "accuracy": "453",
+    "effectiveDistance": "776",
+    "maxHeadshotDistance": "413",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "3",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": ""
+    }
+  },
+  "PS GZH": {
+    "caliber": "7.62x54R",
+    "damage": "84",
+    "penetration": "45",
+    "fragmentation": "8%",
+    "recoil": "8",
+    "accuracy": "10%",
+    "effectiveDistance": "510",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "875",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "5",
+      "class6": "5"
+    }
+  },
+  "7U4": {
+    "caliber": "9x21mm",
+    "damage": "53",
+    "penetration": "27",
+    "fragmentation": "25%",
+    "recoil": "300",
+    "accuracy": "6",
+    "effectiveDistance": "6",
+    "maxHeadshotDistance": "5",
+    "speed": "3",
+    "armorDamage": {
+      "class1": "1",
+      "class2": "0",
+      "class3": "",
+      "class4": "",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "BT GZH (TRACER)": {
+    "caliber": "7.62x54R",
+    "damage": "78",
+    "penetration": "55",
+    "fragmentation": "8%",
+    "recoil": "−4",
+    "accuracy": "−2%",
+    "effectiveDistance": "491",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "875",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "6",
+      "class6": "5"
+    }
+  },
+  "7N42": {
+    "caliber": "9x21mm",
+    "damage": "49",
+    "penetration": "38",
+    "fragmentation": "10%",
+    "recoil": "10",
+    "accuracy": "−3%",
+    "effectiveDistance": "400",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "4",
+      "class4": "3",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "SOFT POINT": {
+    "caliber": ".357 Magnum",
+    "damage": "108",
+    "penetration": "12",
+    "fragmentation": "20%",
+    "recoil": "−29",
+    "accuracy": "27%",
+    "effectiveDistance": "-",
+    "maxHeadshotDistance": "-",
+    "speed": "455",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "1",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "HP": {
+    "caliber": ".50 BMG",
+    "damage": "260",
+    "penetration": "34",
+    "fragmentation": "15",
+    "recoil": "15%",
+    "accuracy": "720",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "880",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "4",
+      "class4": "3",
+      "class5": "1",
+      "class6": ""
+    }
+  },
+  "JHP": {
+    "caliber": ".357 Magnum",
+    "damage": "88",
+    "penetration": "24",
+    "fragmentation": "60%",
+    "recoil": "8",
+    "accuracy": "15%",
+    "effectiveDistance": "-",
+    "maxHeadshotDistance": "-",
+    "speed": "425",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "2",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "FMJ": {
+    "caliber": "9.3x64 mm",
+    "damage": "115",
+    "penetration": "44",
+    "fragmentation": "15%",
+    "recoil": "793",
+    "accuracy": "-",
+    "effectiveDistance": "-",
+    "maxHeadshotDistance": "-",
+    "speed": "-",
+    "armorDamage": {
+      "class1": "-",
+      "class2": "-",
+      "class3": "",
+      "class4": "",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "R37.F": {
+    "caliber": "5.7x28 mm",
+    "damage": "98",
+    "penetration": "8",
+    "fragmentation": "100%",
+    "recoil": "100",
+    "accuracy": ">1KM",
+    "effectiveDistance": "729",
+    "maxHeadshotDistance": "4",
+    "speed": "0",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "SS198LF": {
+    "caliber": "5.7x28 mm",
+    "damage": "70",
+    "penetration": "17",
+    "fragmentation": "80%",
+    "recoil": "326",
+    "accuracy": ">1KM",
+    "effectiveDistance": "792",
+    "maxHeadshotDistance": "6",
+    "speed": "4",
+    "armorDamage": {
+      "class1": "1",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "R37.X": {
+    "caliber": "5.7x28 mm",
+    "damage": "81",
+    "penetration": "11",
+    "fragmentation": "70%",
+    "recoil": "100",
+    "accuracy": ">1KM",
+    "effectiveDistance": "724",
+    "maxHeadshotDistance": "6",
+    "speed": "1",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "SS197SR": {
+    "caliber": "5.7x28 mm",
+    "damage": "62",
+    "penetration": "25",
+    "fragmentation": "50%",
+    "recoil": "401",
+    "accuracy": ">1KM",
+    "effectiveDistance": "594",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "4",
+      "class2": "1",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "L191 (TRACER)": {
+    "caliber": "5.7x28 mm",
+    "damage": "53",
+    "penetration": "33",
+    "fragmentation": "20%",
+    "recoil": "−4%",
+    "accuracy": "358",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "715",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "3",
+      "class4": "2",
+      "class5": "2",
+      "class6": ""
+    }
+  },
+  "SB193": {
+    "caliber": "5.7x28 mm",
+    "damage": "59",
+    "penetration": "27",
+    "fragmentation": "20%",
+    "recoil": "−15",
+    "accuracy": "5%",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "299",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "5",
+      "class4": "2",
+      "class5": "1",
+      "class6": "0"
+    }
+  },
+  "SS190": {
+    "caliber": "5.7x28 mm",
+    "damage": "49",
+    "penetration": "37",
+    "fragmentation": "20%",
+    "recoil": "325",
+    "accuracy": "463",
+    "effectiveDistance": "715",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "5",
+      "class3": "4",
+      "class4": "3",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "ACTION SX": {
+    "caliber": "4.6x30 mm",
+    "damage": "65",
+    "penetration": "18",
+    "fragmentation": "50%",
+    "recoil": "245",
+    "accuracy": ">1KM",
+    "effectiveDistance": "690",
+    "maxHeadshotDistance": "6",
+    "speed": "5",
+    "armorDamage": {
+      "class1": "1",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "SUBSONIC SX": {
+    "caliber": "4.6x30 mm",
+    "damage": "52",
+    "penetration": "23",
+    "fragmentation": "20%",
+    "recoil": "−22",
+    "accuracy": "10%",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "290",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "3",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "JSP SX": {
+    "caliber": "4.6x30 mm",
+    "damage": "46",
+    "penetration": "32",
+    "fragmentation": "30%",
+    "recoil": "-",
+    "accuracy": "-",
+    "effectiveDistance": "579",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "4",
+      "class3": "2",
+      "class4": "1",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "FMJ SX": {
+    "caliber": "4.6x30 mm",
+    "damage": "43",
+    "penetration": "40",
+    "fragmentation": "20%",
+    "recoil": "367",
+    "accuracy": "189",
+    "effectiveDistance": "620",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "4",
+      "class4": "3",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "AP SX": {
+    "caliber": "4.6x30 mm",
+    "damage": "35",
+    "penetration": "53",
+    "fragmentation": "10%",
+    "recoil": "10",
+    "accuracy": "198",
+    "effectiveDistance": "Never",
+    "maxHeadshotDistance": "680",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "5",
+      "class6": ""
+    }
+  },
+  "SP-5 GS": {
+    "caliber": "9x39mm",
+    "damage": "71",
+    "penetration": "28",
+    "fragmentation": "20%",
+    "recoil": "0",
+    "accuracy": ">1KM",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "290",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "5",
+      "class3": "2",
+      "class4": "1",
+      "class5": "0",
+      "class6": ""
+    }
+  },
+  "SPP GS": {
+    "caliber": "9x39mm",
+    "damage": "68",
+    "penetration": "35",
+    "fragmentation": "20%",
+    "recoil": "7",
+    "accuracy": "10%",
+    "effectiveDistance": "887",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "310",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "5",
+      "class5": "3",
+      "class6": "2"
+    }
+  },
+  "PAB-9 GS": {
+    "caliber": "9x39mm",
+    "damage": "62",
+    "penetration": "43",
+    "fragmentation": "10%",
+    "recoil": "10",
+    "accuracy": "−15%",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "320",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "5",
+      "class6": "4"
+    }
+  },
+  "SP-6 GS": {
+    "caliber": "9x39mm",
+    "damage": "60",
+    "penetration": "48",
+    "fragmentation": "10%",
+    "recoil": "5",
+    "accuracy": ">1KM",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "305",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "5",
+      "class5": "5",
+      "class6": ""
+    }
+  },
+  "BP GS": {
+    "caliber": "5.45x39 mm",
+    "damage": "48",
+    "penetration": "45",
+    "fragmentation": "16%",
+    "recoil": "7",
+    "accuracy": "−3%",
+    "effectiveDistance": "378",
+    "maxHeadshotDistance": "455",
+    "speed": "890",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "5",
+      "class6": "4"
+    }
+  },
+  "TKM GEKSA": {
+    "caliber": ".366",
+    "damage": "110",
+    "penetration": "14",
+    "fragmentation": "45%",
+    "recoil": "484",
+    "accuracy": ">1KM",
+    "effectiveDistance": "550",
+    "maxHeadshotDistance": "6",
+    "speed": "3",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "TKM FMJ": {
+    "caliber": ".366",
+    "damage": "98",
+    "penetration": "23",
+    "fragmentation": "25%",
+    "recoil": "10",
+    "accuracy": "363",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "580",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "4",
+      "class3": "1",
+      "class4": "0",
+      "class5": "0",
+      "class6": ""
+    }
+  },
+  "TKM EKO": {
+    "caliber": ".366",
+    "damage": "73",
+    "penetration": "30",
+    "fragmentation": "20%",
+    "recoil": "−15",
+    "accuracy": "−10%",
+    "effectiveDistance": "184",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "770",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "3",
+      "class5": "1",
+      "class6": "0"
+    }
+  },
+  "TKM AP-M": {
+    "caliber": ".366",
+    "damage": "90",
+    "penetration": "42",
+    "fragmentation": "1%",
+    "recoil": "35",
+    "accuracy": "−28%",
+    "effectiveDistance": "633",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "602",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "5",
+      "class6": "4"
+    }
+  },
+  "PRS GS": {
+    "caliber": "5.45x39 mm",
+    "damage": "70",
+    "penetration": "13",
+    "fragmentation": "30%",
+    "recoil": "−5",
+    "accuracy": "392",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "866",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "1",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": ""
+    }
+  },
+  "SP": {
+    "caliber": "9.3x64 mm",
+    "damage": "129",
+    "penetration": "37",
+    "fragmentation": "−20",
+    "recoil": "697",
+    "accuracy": "-",
+    "effectiveDistance": "-",
+    "maxHeadshotDistance": "-",
+    "speed": "-",
+    "armorDamage": {
+      "class1": "-",
+      "class2": "-",
+      "class3": "",
+      "class4": "",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "US GS": {
+    "caliber": "5.45x39 mm",
+    "damage": "65",
+    "penetration": "17",
+    "fragmentation": "10%",
+    "recoil": "−15",
+    "accuracy": ">1KM",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "303",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "5",
+      "class2": "1",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": ""
+    }
+  },
+  "T GS (TRACER)": {
+    "caliber": "5.45x39 mm",
+    "damage": "59",
+    "penetration": "20",
+    "fragmentation": "16%",
+    "recoil": "−5%",
+    "accuracy": "331",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "883",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "1",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": ""
+    }
+  },
+  "PS GS": {
+    "caliber": "5.45x39 mm",
+    "damage": "56",
+    "penetration": "28",
+    "fragmentation": "40%",
+    "recoil": "352",
+    "accuracy": "466",
+    "effectiveDistance": "890",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "5",
+      "class2": "3",
+      "class3": "1",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "PP GS": {
+    "caliber": "5.45x39 mm",
+    "damage": "51",
+    "penetration": "34",
+    "fragmentation": "17%",
+    "recoil": "3",
+    "accuracy": "382",
+    "effectiveDistance": "420",
+    "maxHeadshotDistance": "886",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "4",
+      "class4": "3",
+      "class5": "1",
+      "class6": ""
+    }
+  },
+  "BT GS (TRACER)": {
+    "caliber": "5.45x39 mm",
+    "damage": "54",
+    "penetration": "37",
+    "fragmentation": "16%",
+    "recoil": "5",
+    "accuracy": "−2%",
+    "effectiveDistance": "310",
+    "maxHeadshotDistance": "252",
+    "speed": "880",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "5",
+      "class5": "3",
+      "class6": "2"
+    }
+  },
+  "7N40": {
+    "caliber": "5.45x39 mm",
+    "damage": "55",
+    "penetration": "42",
+    "fragmentation": "2%",
+    "recoil": "−10",
+    "accuracy": "50%",
+    "effectiveDistance": "388",
+    "maxHeadshotDistance": "633",
+    "speed": "915",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "4",
+      "class6": "3"
+    }
+  },
+  "BS GS": {
+    "caliber": "7.62x54R",
+    "damage": "72",
+    "penetration": "70",
+    "fragmentation": "8%",
+    "recoil": "597",
+    "accuracy": ">1KM",
+    "effectiveDistance": "785",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "PPBS GS IGOLNIK": {
+    "caliber": "5.45x39 mm",
+    "damage": "37",
+    "penetration": "62",
+    "fragmentation": "2%",
+    "recoil": "15",
+    "accuracy": "430",
+    "effectiveDistance": "85",
+    "maxHeadshotDistance": "905",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "6",
+      "class6": ""
+    }
+  },
+  "WARMAGEDDON": {
+    "caliber": "5.56x45 mm",
+    "damage": "88",
+    "penetration": "3",
+    "fragmentation": "90%",
+    "recoil": "10",
+    "accuracy": "10%",
+    "effectiveDistance": "525",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "936",
+    "armorDamage": {
+      "class1": "1",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "MK 255 MOD 0 (RRLP)": {
+    "caliber": "5.56x45 mm",
+    "damage": "72",
+    "penetration": "11",
+    "fragmentation": "3%",
+    "recoil": "525",
+    "accuracy": ">1KM",
+    "effectiveDistance": "936",
+    "maxHeadshotDistance": "6",
+    "speed": "1",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "M856 (TRACER)": {
+    "caliber": "5.56x45 mm",
+    "damage": "60",
+    "penetration": "18",
+    "fragmentation": "33%",
+    "recoil": "−2",
+    "accuracy": "−2%",
+    "effectiveDistance": "358",
+    "maxHeadshotDistance": "975",
+    "speed": "874",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "5",
+      "class3": "1",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "M855": {
+    "caliber": "5.56x45 mm",
+    "damage": "54",
+    "penetration": "31",
+    "fragmentation": "40%",
+    "recoil": "358",
+    "accuracy": "464",
+    "effectiveDistance": "922",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "5",
+      "class2": "3",
+      "class3": "2",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "MK 318 MOD 0 (SOST)": {
+    "caliber": "5.56x45 mm",
+    "damage": "53",
+    "penetration": "33",
+    "fragmentation": "35%",
+    "recoil": "3",
+    "accuracy": "2%",
+    "effectiveDistance": "409",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "902",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "4",
+      "class5": "2",
+      "class6": "1"
+    }
+  },
+  "M856A1 (TRACER)": {
+    "caliber": "5.56x45 mm",
+    "damage": "52",
+    "penetration": "38",
+    "fragmentation": "42%",
+    "recoil": "4",
+    "accuracy": "−4%",
+    "effectiveDistance": "424",
+    "maxHeadshotDistance": "594",
+    "speed": "940",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "5",
+      "class5": "3",
+      "class6": "2"
+    }
+  },
+  "M855A1": {
+    "caliber": "5.56x45 mm",
+    "damage": "49",
+    "penetration": "44",
+    "fragmentation": "44%",
+    "recoil": "5",
+    "accuracy": "−5%",
+    "effectiveDistance": "366",
+    "maxHeadshotDistance": "352",
+    "speed": "945",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "5",
+      "class6": "4"
+    }
+  },
+  "M995": {
+    "caliber": "5.56x45 mm",
+    "damage": "42",
+    "penetration": "53",
+    "fragmentation": "42%",
+    "recoil": "8",
+    "accuracy": "−7%",
+    "effectiveDistance": "325",
+    "maxHeadshotDistance": "149",
+    "speed": "1013",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "6",
+      "class6": "5"
+    }
+  },
+  "SSA AP": {
+    "caliber": "5.56x45 mm",
+    "damage": "38",
+    "penetration": "57",
+    "fragmentation": "20%",
+    "recoil": "6",
+    "accuracy": "−9%",
+    "effectiveDistance": "325",
+    "maxHeadshotDistance": "29",
+    "speed": "1013",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "6",
+      "class6": "5"
+    }
+  },
+  "US GZH": {
+    "caliber": "7.62x39 mm",
+    "damage": "56",
+    "penetration": "29",
+    "fragmentation": "8%",
+    "recoil": "−30",
+    "accuracy": "5%",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "300",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "5",
+      "class4": "3",
+      "class5": "1",
+      "class6": "0"
+    }
+  },
+  "T-45M1 GZH (TRACER)": {
+    "caliber": "7.62x39 mm",
+    "damage": "65",
+    "penetration": "30",
+    "fragmentation": "12%",
+    "recoil": "−6",
+    "accuracy": "−4%",
+    "effectiveDistance": "314",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "720",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "3",
+      "class5": "1",
+      "class6": "0"
+    }
+  },
+  "PP": {
+    "caliber": "7.62x39 mm",
+    "damage": "59",
+    "penetration": "41",
+    "fragmentation": "15%",
+    "recoil": "5",
+    "accuracy": "−1%",
+    "effectiveDistance": "-",
+    "maxHeadshotDistance": "-",
+    "speed": "732",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "4",
+      "class6": "3"
+    }
+  },
+  "BP GZH": {
+    "caliber": "7.62x39 mm",
+    "damage": "58",
+    "penetration": "47",
+    "fragmentation": "12%",
+    "recoil": "7",
+    "accuracy": "−3%",
+    "effectiveDistance": "387",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "730",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "5",
+      "class6": "4"
+    }
+  },
+  "MAI AP": {
+    "caliber": "7.62x39 mm",
+    "damage": "53",
+    "penetration": "58",
+    "fragmentation": "5%",
+    "recoil": "10",
+    "accuracy": "−5%",
+    "effectiveDistance": "387",
+    "maxHeadshotDistance": "405",
+    "speed": "730",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "6",
+      "class6": "5"
+    }
+  },
+  "BLACKOUT WHISPER": {
+    "caliber": ".300 blk",
+    "damage": "90",
+    "penetration": "14",
+    "fragmentation": "35%",
+    "recoil": "−5",
+    "accuracy": "5%",
+    "effectiveDistance": "490",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "853",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "4",
+      "class3": "2",
+      "class4": "1",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "BLACKOUT V-MAX": {
+    "caliber": ".300 blk",
+    "damage": "72",
+    "penetration": "20",
+    "fragmentation": "25%",
+    "recoil": "−10",
+    "accuracy": "30%",
+    "effectiveDistance": "466",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "723",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "4",
+      "class4": "3",
+      "class5": "1",
+      "class6": "0"
+    }
+  },
+  "BLACKOUT BCP FMJ": {
+    "caliber": ".300 blk",
+    "damage": "60",
+    "penetration": "30",
+    "fragmentation": "30%",
+    "recoil": "563",
+    "accuracy": ">1KM",
+    "effectiveDistance": "605",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "3",
+      "class3": "2",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "BLACKOUT M62 (TRACER)": {
+    "caliber": ".300 blk",
+    "damage": "54",
+    "penetration": "36",
+    "fragmentation": "20%",
+    "recoil": "1",
+    "accuracy": ">1KM",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "442",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "5",
+      "class4": "4",
+      "class5": "2",
+      "class6": ""
+    }
+  },
+  "BLACKOUT CBJ": {
+    "caliber": ".300 blk",
+    "damage": "58",
+    "penetration": "43",
+    "fragmentation": "15%",
+    "recoil": "5",
+    "accuracy": "-",
+    "effectiveDistance": "-",
+    "maxHeadshotDistance": "725",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "5",
+      "class5": "3",
+      "class6": ""
+    }
+  },
+  "BLACKOUT AP": {
+    "caliber": ".300 blk",
+    "damage": "51",
+    "penetration": "48",
+    "fragmentation": "30%",
+    "recoil": "3",
+    "accuracy": "522",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "635",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "5",
+      "class5": "4",
+      "class6": ""
+    }
+  },
+  "SIG FMJ": {
+    "caliber": "6.8x51mm",
+    "damage": "80",
+    "penetration": "36",
+    "fragmentation": "18%",
+    "recoil": "899",
+    "accuracy": "6",
+    "effectiveDistance": "6",
+    "maxHeadshotDistance": "6",
+    "speed": "5",
+    "armorDamage": {
+      "class1": "4",
+      "class2": "2",
+      "class3": "",
+      "class4": "",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "SIG HYBRID": {
+    "caliber": "6.8x51mm",
+    "damage": "72",
+    "penetration": "47",
+    "fragmentation": "12%",
+    "recoil": "10",
+    "accuracy": "3%",
+    "effectiveDistance": "914",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "5",
+      "class4": "5",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "ULTRA NOSLER": {
+    "caliber": "7.62x51 mm",
+    "damage": "105",
+    "penetration": "15",
+    "fragmentation": "70%",
+    "recoil": "−5",
+    "accuracy": "5%",
+    "effectiveDistance": "536",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "823",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "4",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "TCW SP": {
+    "caliber": "7.62x51 mm",
+    "damage": "85",
+    "penetration": "30",
+    "fragmentation": "35%",
+    "recoil": "−3",
+    "accuracy": "−1%",
+    "effectiveDistance": "543",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "771",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "3",
+      "class5": "2",
+      "class6": "0"
+    }
+  },
+  "BCP FMJ": {
+    "caliber": "7.62x51 mm",
+    "damage": "83",
+    "penetration": "37",
+    "fragmentation": "20%",
+    "recoil": "−7%",
+    "accuracy": "584",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "800",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "4",
+      "class4": "3",
+      "class5": "2",
+      "class6": ""
+    }
+  },
+  "M62 TRACER": {
+    "caliber": "7.62x51 mm",
+    "damage": "82",
+    "penetration": "42",
+    "fragmentation": "14%",
+    "recoil": "1",
+    "accuracy": "−5%",
+    "effectiveDistance": "462",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "816",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "5",
+      "class6": "4"
+    }
+  },
+  "M80": {
+    "caliber": "7.62x51 mm",
+    "damage": "80",
+    "penetration": "43",
+    "fragmentation": "17%",
+    "recoil": "1",
+    "accuracy": "483",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "838",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "5",
+      "class5": "5",
+      "class6": ""
+    }
+  },
+  "M61": {
+    "caliber": "7.62x51 mm",
+    "damage": "75",
+    "penetration": "55",
+    "fragmentation": "13%",
+    "recoil": "3",
+    "accuracy": "−2%",
+    "effectiveDistance": "506",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "849",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "6",
+      "class6": "5"
+    }
+  },
+  "M993": {
+    "caliber": "7.62x51 mm",
+    "damage": "70",
+    "penetration": "65",
+    "fragmentation": "13%",
+    "recoil": "6",
+    "accuracy": "−4%",
+    "effectiveDistance": "445",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "910",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "6",
+      "class6": "6"
+    }
+  },
+  "M80A1": {
+    "caliber": "7.62x51 mm",
+    "damage": "73",
+    "penetration": "60",
+    "fragmentation": "14%",
+    "recoil": "4",
+    "accuracy": "−1%",
+    "effectiveDistance": "899",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "BALL 11 LONG RANGE": {
+    "caliber": "7.62x51 mm",
+    "damage": "95",
+    "penetration": "59",
+    "fragmentation": "15",
+    "recoil": "15%",
+    "accuracy": "650",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "805",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "6",
+      "class6": ""
+    }
+  },
+  "HP BT (TRACER)": {
+    "caliber": "7.62x54R",
+    "damage": "102",
+    "penetration": "23",
+    "fragmentation": "40%",
+    "recoil": "-",
+    "accuracy": "-",
+    "effectiveDistance": "807",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "3",
+      "class2": "1",
+      "class3": "0",
+      "class4": "0",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "SP BT (TRACER)": {
+    "caliber": "7.62x54R",
+    "damage": "92",
+    "penetration": "27",
+    "fragmentation": "24%",
+    "recoil": "-",
+    "accuracy": "-",
+    "effectiveDistance": "703",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "5",
+      "class2": "4",
+      "class3": "2",
+      "class4": "1",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "T-46M GZH (TRACER)": {
+    "caliber": "7.62x54R",
+    "damage": "82",
+    "penetration": "41",
+    "fragmentation": "18%",
+    "recoil": "−5",
+    "accuracy": "−1%",
+    "effectiveDistance": "406",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "800",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "4",
+      "class6": "3"
+    }
+  },
+  "LPS GZH": {
+    "caliber": "7.62x54R",
+    "damage": "81",
+    "penetration": "42",
+    "fragmentation": "18%",
+    "recoil": "−5%",
+    "accuracy": "492",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "865",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "4",
+      "class5": "3",
+      "class6": ""
+    }
+  },
+  "SNB GZH": {
+    "caliber": "7.62x54R",
+    "damage": "75",
+    "penetration": "62",
+    "fragmentation": "8%",
+    "recoil": "10",
+    "accuracy": "510",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "875",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "6",
+      "class6": ""
+    }
+  },
+  "TUNGSTEN CARBIDE AP": {
+    "caliber": "7.62x54R",
+    "damage": "98",
+    "penetration": "61",
+    "fragmentation": "10",
+    "recoil": "10%",
+    "accuracy": "580",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "984",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "6",
+      "class6": ""
+    }
+  },
+  "PS12A": {
+    "caliber": "12.7x55 mm",
+    "damage": "165",
+    "penetration": "10",
+    "fragmentation": "70%",
+    "recoil": "−12",
+    "accuracy": "−15%",
+    "effectiveDistance": "439",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "290",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "0",
+      "class3": "0",
+      "class4": "0",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "PS12": {
+    "caliber": "12.7x55 mm",
+    "damage": "115",
+    "penetration": "28",
+    "fragmentation": "30%",
+    "recoil": "10%",
+    "accuracy": ">1KM",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "285",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "5",
+      "class3": "2",
+      "class4": "1",
+      "class5": "0",
+      "class6": ""
+    }
+  },
+  "PS12B": {
+    "caliber": "12.7x55 mm",
+    "damage": "102",
+    "penetration": "46",
+    "fragmentation": "30%",
+    "recoil": "15",
+    "accuracy": "719",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "300",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "5",
+      "class5": "4",
+      "class6": ""
+    }
+  },
+  "M21 (TRACER)": {
+    "caliber": ".50 BMG",
+    "damage": "220",
+    "penetration": "45",
+    "fragmentation": "20",
+    "recoil": "670",
+    "accuracy": ">1KM",
+    "effectiveDistance": "867",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "5",
+      "class4": "4",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "M33": {
+    "caliber": ".50 BMG",
+    "damage": "190",
+    "penetration": "56",
+    "fragmentation": "25",
+    "recoil": "−5%",
+    "accuracy": "690",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "887",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "5",
+      "class6": ""
+    }
+  },
+  "M903 SLAP": {
+    "caliber": ".50 BMG",
+    "damage": "160",
+    "penetration": "115",
+    "fragmentation": "28",
+    "recoil": "−10%",
+    "accuracy": "750",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "1220",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "6",
+      "class6": ""
+    }
+  },
+  "ME LOKT": {
+    "caliber": ".308 Marlin Express",
+    "damage": "96",
+    "penetration": "24",
+    "fragmentation": "−3",
+    "recoil": "−2%",
+    "accuracy": "520",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "838",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "3",
+      "class3": "2",
+      "class4": "0",
+      "class5": "0",
+      "class6": ""
+    }
+  },
+  "ME": {
+    "caliber": ".308 Marlin Express",
+    "damage": "80",
+    "penetration": "42",
+    "fragmentation": "3",
+    "recoil": "−2%",
+    "accuracy": "490",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "838",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "4",
+      "class5": "3",
+      "class6": ""
+    }
+  },
+  "TAC-X": {
+    "caliber": ".338 Lapua Magnum",
+    "damage": "196",
+    "penetration": "18",
+    "fragmentation": "50%",
+    "recoil": "5",
+    "accuracy": "10%",
+    "effectiveDistance": "716",
+    "maxHeadshotDistance": ">1KM",
+    "speed": "880",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "5",
+      "class3": "3",
+      "class4": "1",
+      "class5": "0",
+      "class6": "0"
+    }
+  },
+  "UCW": {
+    "caliber": ".338 Lapua Magnum",
+    "damage": "142",
+    "penetration": "32",
+    "fragmentation": "60%",
+    "recoil": "−5%",
+    "accuracy": "702",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "849",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "5",
+      "class4": "4",
+      "class5": "2",
+      "class6": ""
+    }
+  },
+  "AP": {
+    "caliber": ".338 Lapua Magnum",
+    "damage": "115",
+    "penetration": "79",
+    "fragmentation": "13%",
+    "recoil": "10",
+    "accuracy": "696",
+    "effectiveDistance": ">1KM",
+    "maxHeadshotDistance": "849",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "6",
+      "class5": "6",
+      "class6": ""
+    }
+  },
+  "7N33": {
+    "caliber": "9.3x64 mm",
+    "damage": "108",
+    "penetration": "56",
+    "fragmentation": "20",
+    "recoil": "−5%",
+    "accuracy": "790",
+    "effectiveDistance": "-",
+    "maxHeadshotDistance": "-",
+    "speed": "-",
+    "armorDamage": {
+      "class1": "-",
+      "class2": "-",
+      "class3": "-",
+      "class4": "",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "30MM GRENADE": {
+    "caliber": "Mounted Weapons",
+    "damage": "199",
+    "penetration": "1",
+    "fragmentation": "0%",
+    "recoil": "0",
+    "accuracy": "0",
+    "effectiveDistance": "0",
+    "maxHeadshotDistance": "0",
+    "speed": "0",
+    "armorDamage": {
+      "class1": "0",
+      "class2": "",
+      "class3": "",
+      "class4": "",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "12.7X108MM": {
+    "caliber": "Mounted Weapons",
+    "damage": "182",
+    "penetration": "88",
+    "fragmentation": "17%",
+    "recoil": "891",
+    "accuracy": ">1KM",
+    "effectiveDistance": "6",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "12.7X108MM (TRACER)": {
+    "caliber": "Mounted Weapons",
+    "damage": "199",
+    "penetration": "80",
+    "fragmentation": "17%",
+    "recoil": "446",
+    "accuracy": ">1KM",
+    "effectiveDistance": "6",
+    "maxHeadshotDistance": "6",
+    "speed": "6",
+    "armorDamage": {
+      "class1": "6",
+      "class2": "6",
+      "class3": "6",
+      "class4": "",
+      "class5": "",
+      "class6": ""
+    }
+  },
+  "40MM BUCKSHOT GRENADE": {
+    "caliber": "Other",
+    "damage": "15x160",
+    "penetration": "5",
+    "fragmentation": "0%",
+    "recoil": "994",
+    "accuracy": ">1KM",
+    "effectiveDistance": "5",
+    "maxHeadshotDistance": "3",
+    "speed": "3",
+    "armorDamage": {
+      "class1": "3",
+      "class2": "3",
+      "class3": "3",
+      "class4": "",
+      "class5": "",
+      "class6": ""
+    }
+  }
+}

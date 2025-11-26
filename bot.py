@@ -184,6 +184,168 @@ async def price(ctx, *, item_name: str = None):
             logger.error(f"Error processing price command: {e}", exc_info=True)
             await ctx.send(f"An error occurred: {str(e)}")
 
+@bot.command(name='ammo', aliases=['a'])
+async def ammo(ctx, *, args: str = None):
+    """Get detailed ammo information including stats and market prices"""
+    logger.info(f'Ammo command received from {ctx.author} for: {args}')
+    
+    if not args:
+        await ctx.send("Please provide an ammo name. Usage: `!ammo <ammo_name>` or `!ammo <ammo_name> all`")
+        return
+    
+    # Check if 'all' flag is present
+    show_all = False
+    if args.lower().endswith(' all'):
+        show_all = True
+        ammo_name = args[:-4].strip()  # Remove ' all' from the end
+    else:
+        ammo_name = args.strip()
+    
+    async with ctx.typing():
+        try:
+            from ammo_helper import find_ammo_stats, format_armor_effectiveness, format_trader_info
+            
+            # Find ammo in static data
+            full_name, stats = find_ammo_stats(ammo_name)
+            
+            if not stats:
+                await ctx.send(f"No ammo found matching '{ammo_name}'.")
+                return
+            
+            # Get market data from API
+            market_items = tarkov_client.get_ammo_market_data(full_name)
+            
+            # Create embed
+            embed = discord.Embed(
+                title=f"🔫 {full_name}",
+                description=f"**{stats['caliber']}**",
+                color=0xff6b35
+            )
+            
+            if show_all:
+                # FULL VERSION - All stats
+                embed.add_field(
+                    name="⚔️ Combat Stats",
+                    value=(
+                        f"**Damage:** {stats['damage']}\n"
+                        f"**Penetration:** {stats['pen']}\n"
+                        f"**Fragmentation:** {stats['frag']}\n"
+                        f"**Velocity:** {stats['speed']} m/s"
+                    ),
+                    inline=True
+                )
+                
+                embed.add_field(
+                    name="🎯 Ballistics",
+                    value=(
+                        f"**Recoil:** {stats['recoil']}\n"
+                        f"**Accuracy:** {stats['accuracy']}"
+                    ),
+                    inline=True
+                )
+                
+                # Armor Effectiveness
+                armor_eff = format_armor_effectiveness(stats['armor'])
+                embed.add_field(
+                    name="🛡️ Armor Effectiveness",
+                    value=armor_eff,
+                    inline=False
+                )
+                
+                # Market Data
+                if market_items:
+                    item = market_items[0]
+                    avg_price = item.get('avg24hPrice', 'N/A')
+                    
+                    if avg_price and avg_price != 'N/A':
+                        embed.add_field(
+                            name="📊 Market Price",
+                            value=f"Avg 24h: **{avg_price:,} ₽**",
+                            inline=False
+                        )
+            else:
+                # COMPACT VERSION - Essential stats only
+                embed.add_field(
+                    name="⚔️ Stats",
+                    value=(
+                        f"**Damage:** {stats['damage']}\n"
+                        f"**Penetration:** {stats['pen']}"
+                    ),
+                    inline=True
+                )
+                
+                # Armor Effectiveness with colored circles
+                armor_eff = format_armor_effectiveness(stats['armor'])
+                embed.add_field(
+                    name="🛡️ Armor",
+                    value=armor_eff,
+                    inline=True
+                )
+            
+            # Where to Buy (shown in both versions)
+            if market_items:
+                item = market_items[0]
+                buy_for = item.get('buyFor', [])
+                
+                if buy_for:
+                    if show_all:
+                        # Full version: Show top 5 cheapest options
+                        trader_info = format_trader_info(buy_for)
+                        if trader_info:
+                            embed.add_field(
+                                name="💰 Where to Buy",
+                                value="\n".join(trader_info[:5]),
+                                inline=False
+                            )
+                    else:
+                        # Compact version: Show Best Trader + Flea Market only
+                        # Filter for best trader (cheapest non-flea) and flea market
+                        trader_offers = [x for x in buy_for if x['source'] != 'fleaMarket']
+                        flea_offers = [x for x in buy_for if x['source'] == 'fleaMarket']
+                        
+                        compact_list = []
+                        
+                        # Add best trader offer
+                        if trader_offers:
+                            best_trader = min(trader_offers, key=lambda x: x['priceRUB'])
+                            compact_list.extend(format_trader_info([best_trader]))
+                            
+                        # Add flea market offer
+                        if flea_offers:
+                            compact_list.extend(format_trader_info([flea_offers[0]]))
+                            
+                        if compact_list:
+                            embed.add_field(
+                                name="💰 Where to Buy",
+                                value="\n".join(compact_list),
+                                inline=False
+                            )
+                else:
+                    embed.add_field(
+                        name="💰 Where to Buy",
+                        value="❌ Not available for purchase",
+                        inline=False
+                    )
+            else:
+                embed.add_field(
+                    name="💰 Market Data",
+                    value="⚠️ No market data available",
+                    inline=False
+                )
+            
+            # Footer
+            if show_all:
+                embed.set_footer(text=f"Requested by {ctx.author.name}")
+            else:
+                embed.set_footer(text=f"Requested by {ctx.author.name} • Use !ammo {ammo_name} all for full stats")
+            
+            await ctx.send(embed=embed)
+            logger.info(f'Sent ammo info for {full_name} ({"full" if show_all else "compact"} mode)')
+        
+        except Exception as e:
+            logger.error(f"Error processing ammo command: {e}", exc_info=True)
+            await ctx.send(f"An error occurred: {str(e)}")
+
 @bot.command(name='bosses', aliases=['b'])
 async def bosses(ctx, *, query: str = None):
     """Get boss spawn information for Tarkov maps"""
@@ -291,6 +453,8 @@ async def help_command(ctx):
         "🛠️ **Comandos disponibles:**\n"
         "> Puedes usar `!` o `$` como prefijo\n"
         "`!price <item> [cantidad]` → Muestra precios (ej: `!p m4a1 3`).\n"
+        "`!ammo <munición>` → Info de munición (ej: `!a m855a1`).\n"
+        "`!ammo <munición> all` → Info completa con todas las stats.\n"
         "`!bosses` o `!b` → Muestra botones para elegir mapa.\n"
         "`!bosses <mapa>` → Muestra bosses de ese mapa.\n"
         "`!bosses <nombre>` → Busca un boss por nombre.\n"

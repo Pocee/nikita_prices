@@ -53,4 +53,33 @@ class TarkovClient:
         """
         result = self.run_query(query)
         return result.get('data', {}).get('maps', [])
+    
+    def get_ammo_market_data(self, ammo_name):
+        """Get market data for ammo including trader prices and levels"""
+        query = f"""
+        {{
+            items(name: "{ammo_name}") {{
+                name
+                shortName
+                avg24hPrice
+                buyFor {{
+                    price
+                    currency
+                    source
+                    priceRUB
+                    vendor {{
+                        name
+                        ... on TraderOffer {{
+                            minTraderLevel
+                            taskUnlock {{
+                                name
+                            }}
+                        }}
+                    }}
+                }}
+            }}
+        }}
+        """
+        result = self.run_query(query)
+        return result.get('data', {}).get('items', [])
 
