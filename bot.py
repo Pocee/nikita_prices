@@ -131,6 +131,17 @@ async def price(ctx, *, item_name: str = None):
     
     async with ctx.typing():
         try:
+            # Check if the last part of the query is a number (limit)
+            parts = item_name.rsplit(' ', 1)
+            limit = 1  # Default limit
+            
+            if len(parts) > 1 and parts[1].isdigit():
+                limit = int(parts[1])
+                item_name = parts[0]
+                # Cap limit to avoid spam
+                if limit > 10:
+                    limit = 10
+            
             items = tarkov_client.get_item_price(item_name)
             logger.info(f'Found {len(items) if items else 0} items for query: {item_name}')
             
@@ -138,8 +149,8 @@ async def price(ctx, *, item_name: str = None):
                 await ctx.send(f"No items found matching '{item_name}'.")
                 return
 
-            # Limit to first 3 results to avoid spam
-            for item in items[:3]:
+            # Limit results
+            for item in items[:limit]:
                 name = item.get('name', 'Unknown')
                 short_name = item.get('shortName', 'Unknown')
                 avg_price = item.get('avg24hPrice', 'N/A')
@@ -279,7 +290,7 @@ async def help_command(ctx):
     help_text = (
         "🛠️ **Comandos disponibles:**\n"
         "> Puedes usar `!` o `$` como prefijo\n"
-        "`!price <item>` o `!p <item>` → Muestra precios del mercado.\n"
+        "`!price <item> [cantidad]` → Muestra precios (ej: `!p m4a1 3`).\n"
         "`!bosses` o `!b` → Muestra botones para elegir mapa.\n"
         "`!bosses <mapa>` → Muestra bosses de ese mapa.\n"
         "`!bosses <nombre>` → Busca un boss por nombre.\n"
