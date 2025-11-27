@@ -81,5 +81,19 @@ class TarkovClient:
         }}
         """
         result = self.run_query(query)
-        return result.get('data', {}).get('items', [])
+        items = result.get('data', {}).get('items', [])
+        
+        if not items:
+            return []
+            
+        # Filter out "pack" items unless specifically requested
+        # and prioritize exact matches or base items
+        filtered_items = [i for i in items if "pack" not in i['name'].lower()]
+        
+        if filtered_items:
+            # Sort by name length (shortest is usually the base item)
+            filtered_items.sort(key=lambda x: len(x['name']))
+            return filtered_items
+            
+        return items
 
