@@ -31,7 +31,7 @@ class TarkovClient:
         """
         result = self.run_query(query)
         return result.get('data', {}).get('itemsByName', [])
-    
+#pene
     def get_maps_and_bosses(self):
         """Get all maps with their boss spawn information"""
         query = """
