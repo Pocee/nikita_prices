@@ -206,11 +206,59 @@ async def ammo(ctx, *, args: str = None):
             from ammo_helper import find_ammo_stats, format_armor_effectiveness, format_trader_info
             
             # Find ammo in static data
-            full_name, stats = find_ammo_stats(ammo_name)
+            matches = find_ammo_stats(ammo_name)
             
-            if not stats:
+            if not matches:
                 await ctx.send(f"No ammo found matching '{ammo_name}'.")
                 return
+            
+            if len(matches) > 1:
+                # Multiple matches found - show buttons for selection
+                embed = discord.Embed(
+                    title="🔍 Multiple Ammos Found",
+                    description=f"Found {len(matches)} matches for '{ammo_name}'. Select one:",
+                    color=0xffaa00
+                )
+                
+                # Create a view with buttons (max 5 per row, max 25 total)
+                view = discord.ui.View(timeout=60)
+                
+                for i, (match_name, _) in enumerate(matches[:25]):  # Discord limit: 25 buttons
+                    # Create button with ammo name
+                    button = discord.ui.Button(
+                        label=match_name,
+                        style=discord.ButtonStyle.primary,
+                        custom_id=f"ammo_{i}"
+                    )
+                    
+                    # Define callback for this button
+                    async def button_callback(interaction: discord.Interaction, name=match_name):
+                        # Check if the user who clicked is the one who requested
+                        if interaction.user.id != ctx.author.id:
+                            await interaction.response.send_message("This isn't your command!", ephemeral=True)
+                            return
+                        
+                        # Acknowledge the interaction
+                        await interaction.response.defer()
+                        
+                        # Re-run the command with the selected ammo
+                        await ctx.invoke(bot.get_command('ammo'), args=f"{name} {args.split()[-1] if args.lower().endswith(' all') else ''}")
+                    
+                    button.callback = button_callback
+                    view.add_item(button)
+                
+                # Show list of all matches in embed
+                match_list = [f"{i+1}. {m[0]}" for i, m in enumerate(matches[:25])]
+                embed.add_field(name="Options", value="\n".join(match_list), inline=False)
+                
+                if len(matches) > 25:
+                    embed.set_footer(text=f"Showing first 25 of {len(matches)} matches. Try a more specific name.")
+                
+                await ctx.send(embed=embed, view=view)
+                return
+            
+            # Single match found
+            full_name, stats = matches[0]
             
             # Get market data from API
             market_items = tarkov_client.get_ammo_market_data(full_name)

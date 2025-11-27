@@ -7,21 +7,54 @@ from ammo_data import AMMO_DATA
 def find_ammo_stats(name):
     """
     Find ammo stats by name (case-insensitive)
-    Returns: (ammo_name, stats_dict) or (None, None)
+    Returns: list of tuples [(ammo_name, stats_dict), ...]
+    Prioritizes: 1) Exact name start, 2) Exact word, 3) Prefix, 4) Partial
     """
     name_lower = name.lower()
+    exact_name_matches = []  # "PS" matches "PS GZH" (name starts with search)
+    exact_word_matches = []  # "PS" matches "PM PS GS PPO" (PS is a word)
+    prefix_matches = []      # "PS" matches "PSV" (starts with PS)
+    partial_matches = []     # "PS" matches "BPS" (contains PS)
     
-    # Try exact match first
     for key in AMMO_DATA:
-        if key.lower() == name_lower:
-            return key, AMMO_DATA[key]
+        key_lower = key.lower()
+        
+        # Exact match
+        if key_lower == name_lower:
+            return [(key, AMMO_DATA[key])]
+        
+        # Split by space to get ammo name without caliber
+        parts = key.split()
+        if len(parts) > 1:
+            ammo_name_only = ' '.join(parts[1:])
+            ammo_words = ammo_name_only.split()
+            
+            # Check if ammo name starts with search term (e.g., "PS GZH" starts with "PS")
+            if ammo_name_only.lower().startswith(name_lower + ' ') or ammo_name_only.lower() == name_lower:
+                exact_name_matches.append((key, AMMO_DATA[key]))
+                continue
+            
+            # Check if search term is an exact word match
+            if any(word.lower() == name_lower for word in ammo_words):
+                exact_word_matches.append((key, AMMO_DATA[key]))
+                continue
+            
+            # Check if it starts with the search term
+            if ammo_name_only.lower().startswith(name_lower):
+                prefix_matches.append((key, AMMO_DATA[key]))
+                continue
+        
+        # Partial match anywhere
+        if name_lower in key_lower:
+            partial_matches.append((key, AMMO_DATA[key]))
     
-    # Try partial match
-    for key in AMMO_DATA:
-        if name_lower in key.lower():
-            return key, AMMO_DATA[key]
+    # Return in priority order with length sorting within each tier
+    exact_name_matches.sort(key=lambda x: len(x[0]))
+    exact_word_matches.sort(key=lambda x: len(x[0]))
+    prefix_matches.sort(key=lambda x: len(x[0]))
+    partial_matches.sort(key=lambda x: len(x[0]))
     
-    return None, None
+    return exact_name_matches + exact_word_matches + prefix_matches + partial_matches
 
 
 def format_armor_effectiveness(armor_list):

@@ -2,7 +2,7 @@
 # Ammo stats database - Auto-generated from CSV
 
 AMMO_DATA = {
-    '5.25MM BUCKSHOT': {
+    '12 Gauge Shot 5.25MM BUCKSHOT': {
         'caliber': '12 Gauge Shot',
         'damage': '8x37',
         'pen': '1',
@@ -12,7 +12,7 @@ AMMO_DATA = {
         'speed': '330',
         'armor': ['3', '3', '3', '3', '3', '3']
     },
-    '8.5MM MAGNUM BUCKSHOT': {
+    '12 Gauge Shot 8.5MM MAGNUM BUCKSHOT': {
         'caliber': '12 Gauge Shot',
         'damage': '8x50',
         'pen': '2',
@@ -22,7 +22,7 @@ AMMO_DATA = {
         'speed': '385',
         'armor': ['3', '3', '3', '3', '3', '3']
     },
-    '6.5MM EXPRESS BUCKSHOT': {
+    '12 Gauge Shot 6.5MM EXPRESS BUCKSHOT': {
         'caliber': '12 Gauge Shot',
         'damage': '9x35',
         'pen': '3',
@@ -32,7 +32,7 @@ AMMO_DATA = {
         'speed': '430',
         'armor': ['3', '3', '3', '3', '3', '3']
     },
-    '7MM BUCKSHOT': {
+    '12 Gauge Shot 7MM BUCKSHOT': {
         'caliber': '12 Gauge Shot',
         'damage': '8x39',
         'pen': '3',
@@ -42,7 +42,7 @@ AMMO_DATA = {
         'speed': '415',
         'armor': ['3', '3', '3', '3', '3', '3']
     },
-    'PIRANHA': {
+    '12 Gauge Shot PIRANHA': {
         'caliber': '12 Gauge Shot',
         'damage': '10x25',
         'pen': '24',
@@ -52,7 +52,7 @@ AMMO_DATA = {
         'speed': '310',
         'armor': ['6', '6', '5', '4', '4', '4']
     },
-    'FLECHETTE': {
+    '12 Gauge Shot FLECHETTE': {
         'caliber': '12 Gauge Shot',
         'damage': '8x25',
         'pen': '31',
@@ -62,7 +62,7 @@ AMMO_DATA = {
         'speed': '320',
         'armor': ['6', '6', '6', '5', '5', '5']
     },
-    'RIP': {
+    '12 Gauge Slugs RIP': {
         'caliber': '12 Gauge Slugs',
         'damage': '265',
         'pen': '2',
@@ -72,7 +72,7 @@ AMMO_DATA = {
         'speed': '410',
         'armor': ['0', '0', '0', '0', '0', '0']
     },
-    'SUPERFORMANCE HP SLUG': {
+    '12 Gauge Slugs SUPERFORMANCE HP SLUG': {
         'caliber': '12 Gauge Slugs',
         'damage': '220',
         'pen': '5',
@@ -82,7 +82,7 @@ AMMO_DATA = {
         'speed': '594',
         'armor': ['0', '0', '0', '0', '0', '0']
     },
-    'GRIZZLY 40 SLUG': {
+    '12 Gauge Slugs GRIZZLY 40 SLUG': {
         'caliber': '12 Gauge Slugs',
         'damage': '190',
         'pen': '12',
@@ -92,7 +92,7 @@ AMMO_DATA = {
         'speed': '390',
         'armor': ['6', '2', '0', '0', '0', '0']
     },
-    'COPPER SABOT HP SLUG': {
+    '12 Gauge Slugs COPPER SABOT HP SLUG': {
         'caliber': '12 Gauge Slugs',
         'damage': '206',
         'pen': '14',
@@ -102,7 +102,7 @@ AMMO_DATA = {
         'speed': '442',
         'armor': ['6', '3', '1', '0', '0', '0']
     },
-    'LEAD SLUG': {
+    '12 Gauge Slugs LEAD SLUG': {
         'caliber': '12 Gauge Slugs',
         'damage': '167',
         'pen': '15',
@@ -112,7 +112,7 @@ AMMO_DATA = {
         'speed': '370',
         'armor': ['6', '4', '1', '0', '0', '0']
     },
-    'DUAL SABOT SLUG': {
+    '12 Gauge Slugs DUAL SABOT SLUG': {
         'caliber': '12 Gauge Slugs',
         'damage': '2x85',
         'pen': '17',
@@ -122,7 +122,7 @@ AMMO_DATA = {
         'speed': '415',
         'armor': ['6', '5', '2', '0', '0', '0']
     },
-    'POLEVA-3 SLUG': {
+    '12 Gauge Slugs POLEVA-3 SLUG': {
         'caliber': '12 Gauge Slugs',
         'damage': '140',
         'pen': '17',
@@ -132,7 +132,7 @@ AMMO_DATA = {
         'speed': '410',
         'armor': ['6', '5', '1', '0', '0', '0']
     },
-    'FTX CUSTOM LITE SLUG': {
+    '12 Gauge Slugs FTX CUSTOM LITE SLUG': {
         'caliber': '12 Gauge Slugs',
         'damage': '183',
         'pen': '20',
@@ -142,7 +142,7 @@ AMMO_DATA = {
         'speed': '480',
         'armor': ['6', '6', '2', '0', '0', '0']
     },
-    'POLEVA-6U SLUG': {
+    '12 Gauge Slugs POLEVA-6U SLUG': {
         'caliber': '12 Gauge Slugs',
         'damage': '150',
         'pen': '20',
@@ -152,7 +152,7 @@ AMMO_DATA = {
         'speed': '430',
         'armor': ['6', '6', '2', '0', '0', '0']
     },
-    'MAKESHIFT .50 BMG SLUG (TRACER)': {
+    '12 Gauge Slugs MAKESHIFT .50 BMG SLUG (TRACER)': {
         'caliber': '12 Gauge Slugs',
         'damage': '197',
         'pen': '26',
@@ -162,7 +162,7 @@ AMMO_DATA = {
         'speed': '410',
         'armor': ['6', '6', '5', '3', '1', '0']
     },
-    'AP-20 ARMOR-PIERCING SLUG': {
+    '12 Gauge Slugs AP-20 ARMOR-PIERCING SLUG': {
         'caliber': '12 Gauge Slugs',
         'damage': '164',
         'pen': '37',
@@ -172,7 +172,7 @@ AMMO_DATA = {
         'speed': '510',
         'armor': ['6', '6', '6', '5', '4', '3']
     },
-    '5.6MM BUCKSHOT': {
+    '20 Gauge 5.6MM BUCKSHOT': {
         'caliber': '20 Gauge',
         'damage': '8x26',
         'pen': '1',
@@ -182,7 +182,7 @@ AMMO_DATA = {
         'speed': '340',
         'armor': ['3', '3', '3', '3', '3', '3']
     },
-    '6.2MM BUCKSHOT': {
+    '20 Gauge 6.2MM BUCKSHOT': {
         'caliber': '20 Gauge',
         'damage': '8x22',
         'pen': '2',
@@ -192,7 +192,7 @@ AMMO_DATA = {
         'speed': '410',
         'armor': ['3', '3', '3', '3', '3', '3']
     },
-    '7.5MM BUCKSHOT': {
+    '20 Gauge 7.5MM BUCKSHOT': {
         'caliber': '20 Gauge',
         'damage': '8x25',
         'pen': '3',
@@ -202,7 +202,7 @@ AMMO_DATA = {
         'speed': '475',
         'armor': ['3', '3', '3', '3', '3', '3']
     },
-    '7.3MM BUCKSHOT': {
+    '20 Gauge 7.3MM BUCKSHOT': {
         'caliber': '20 Gauge',
         'damage': '9x23',
         'pen': '3',
@@ -212,7 +212,7 @@ AMMO_DATA = {
         'speed': '430',
         'armor': ['3', '3', '3', '3', '3', '3']
     },
-    'DEVASTATOR SLUG': {
+    '20 Gauge DEVASTATOR SLUG': {
         'caliber': '20 Gauge',
         'damage': '198',
         'pen': '5',
@@ -222,7 +222,7 @@ AMMO_DATA = {
         'speed': '405',
         'armor': ['1', '0', '0', '0', '0', '0']
     },
-    'POLEVA-3 SLUG': {
+    '20 Gauge POLEVA-3 SLUG': {
         'caliber': '20 Gauge',
         'damage': '120',
         'pen': '14',
@@ -232,7 +232,7 @@ AMMO_DATA = {
         'speed': '425',
         'armor': ['6', '2', '0', '0', '0', '0']
     },
-    'STAR SLUG': {
+    '20 Gauge STAR SLUG': {
         'caliber': '20 Gauge',
         'damage': '154',
         'pen': '16',
@@ -242,7 +242,7 @@ AMMO_DATA = {
         'speed': '415',
         'armor': ['6', '5', '1', '0', '0', '0']
     },
-    'POLEVA-6U SLUG': {
+    '20 Gauge POLEVA-6U SLUG': {
         'caliber': '20 Gauge',
         'damage': '135',
         'pen': '17',
@@ -252,7 +252,7 @@ AMMO_DATA = {
         'speed': '445',
         'armor': ['6', '5', '1', '0', '0', '0']
     },
-    'FLECHETTE': {
+    '20 Gauge FLECHETTE': {
         'caliber': '20 Gauge',
         'damage': '8x20',
         'pen': '24',
@@ -262,7 +262,7 @@ AMMO_DATA = {
         'speed': '400',
         'armor': ['6', '6', '5', '4', '4', '4']
     },
-    'DANGEROUS GAME SLUG': {
+    '20 Gauge DANGEROUS GAME SLUG': {
         'caliber': '20 Gauge',
         'damage': '143',
         'pen': '25',
@@ -272,7 +272,7 @@ AMMO_DATA = {
         'speed': '476',
         'armor': ['6', '6', '5', '3', '1', '0']
     },
-    'TSS ARMOR PIERCING SLUG': {
+    '20 Gauge TSS ARMOR PIERCING SLUG': {
         'caliber': '20 Gauge',
         'damage': '155',
         'pen': '30',
@@ -282,7 +282,7 @@ AMMO_DATA = {
         'speed': '482',
         'armor': ['6', '6', '6', '3', '1', '0']
     },
-    'ZVEZDA FLASHBANG ROUND': {
+    '23x75 mm ZVEZDA FLASHBANG ROUND': {
         'caliber': '23x75 mm',
         'damage': '0',
         'pen': '0',
@@ -292,7 +292,7 @@ AMMO_DATA = {
         'speed': '20%',
         'armor': ['0', '0', '0', '0', '0', '0']
     },
-    'SHRAPNEL-25 BUCKSHOT': {
+    '23x75 mm SHRAPNEL-25 BUCKSHOT': {
         'caliber': '23x75 mm',
         'damage': '8x78',
         'pen': '10',
@@ -302,7 +302,7 @@ AMMO_DATA = {
         'speed': '375',
         'armor': ['6', '4', '3', '3', '3', '3']
     },
-    'SHRAPNEL-10 BUCKSHOT': {
+    '23x75 mm SHRAPNEL-10 BUCKSHOT': {
         'caliber': '23x75 mm',
         'damage': '8x87',
         'pen': '11',
@@ -312,7 +312,7 @@ AMMO_DATA = {
         'speed': '270',
         'armor': ['6', '4', '3', '3', '3', '3']
     },
-    'BARRIKADA SLUG': {
+    '23x75 mm BARRIKADA SLUG': {
         'caliber': '23x75 mm',
         'damage': '192',
         'pen': '39',
@@ -322,7 +322,7 @@ AMMO_DATA = {
         'speed': '420',
         'armor': ['6', '6', '6', '6', '4', '4']
     },
-    'PM SP8 GZH': {
+    '9x18mm PM SP8 GZH': {
         'caliber': '9x18mm',
         'damage': '67',
         'pen': '1',
@@ -332,7 +332,7 @@ AMMO_DATA = {
         'speed': '250',
         'armor': ['0', '0', '0', '0', '0', '0']
     },
-    'PM SP7 GZH': {
+    '9x18mm PM SP7 GZH': {
         'caliber': '9x18mm',
         'damage': '77',
         'pen': '2',
@@ -342,7 +342,7 @@ AMMO_DATA = {
         'speed': '420',
         'armor': ['0', '0', '0', '0', '0', '0']
     },
-    'PM PSV': {
+    '9x18mm PM PSV': {
         'caliber': '9x18mm',
         'damage': '69',
         'pen': '3',
@@ -352,7 +352,7 @@ AMMO_DATA = {
         'speed': '280',
         'armor': ['0', '0', '0', '0', '0', '0']
     },
-    'PM P GZH': {
+    '9x18mm PM P GZH': {
         'caliber': '9x18mm',
         'damage': '50',
         'pen': '5',
@@ -362,7 +362,7 @@ AMMO_DATA = {
         'speed': '302',
         'armor': ['2', '0', '0', '0', '0', '0']
     },
-    'PM PSO GZH': {
+    '9x18mm PM PSO GZH': {
         'caliber': '9x18mm',
         'damage': '54',
         'pen': '5',
@@ -372,7 +372,7 @@ AMMO_DATA = {
         'speed': '315',
         'armor': ['2', '0', '0', '0', '0', '0']
     },
-    'PM PS GS PPO': {
+    '9x18mm PM PS GS PPO': {
         'caliber': '9x18mm',
         'damage': '55',
         'pen': '6',
@@ -382,7 +382,7 @@ AMMO_DATA = {
         'speed': '330',
         'armor': ['3', '0', '0', '0', '0', '0']
     },
-    'PM PRS GS': {
+    '9x18mm PM PRS GS': {
         'caliber': '9x18mm',
         'damage': '58',
         'pen': '6',
@@ -392,7 +392,7 @@ AMMO_DATA = {
         'speed': '302',
         'armor': ['3', '0', '0', '0', '0', '0']
     },
-    'PM PPE GZH': {
+    '9x18mm PM PPE GZH': {
         'caliber': '9x18mm',
         'damage': '61',
         'pen': '7',
@@ -402,7 +402,7 @@ AMMO_DATA = {
         'speed': '297',
         'armor': ['4', '0', '0', '0', '0', '0']
     },
-    'PM PPT GZH (TRACER)': {
+    '9x18mm PM PPT GZH (TRACER)': {
         'caliber': '9x18mm',
         'damage': '59',
         'pen': '8',
@@ -412,7 +412,7 @@ AMMO_DATA = {
         'speed': '301',
         'armor': ['5', '1', '0', '0', '0', '0']
     },
-    'PM PST GZH': {
+    '9x18mm PM PST GZH': {
         'caliber': '9x18mm',
         'damage': '50',
         'pen': '12',
@@ -422,7 +422,7 @@ AMMO_DATA = {
         'speed': '298',
         'armor': ['6', '1', '0', '0', '0', '0']
     },
-    'PM RG028 GZH': {
+    '9x18mm PM RG028 GZH': {
         'caliber': '9x18mm',
         'damage': '65',
         'pen': '13',
@@ -432,7 +432,7 @@ AMMO_DATA = {
         'speed': '330',
         'armor': ['6', '2', '0', '0', '0', '0']
     },
-    'PM BZHT GZH': {
+    '9x18mm PM BZHT GZH': {
         'caliber': '9x18mm',
         'damage': '53',
         'pen': '18',
@@ -442,7 +442,7 @@ AMMO_DATA = {
         'speed': '325',
         'armor': ['6', '5', '1', '0', '0', '0']
     },
-    'PMM PSTM GZH': {
+    '9x18mm PMM PSTM GZH': {
         'caliber': '9x18mm',
         'damage': '58',
         'pen': '24',
@@ -452,7 +452,7 @@ AMMO_DATA = {
         'speed': '420',
         'armor': ['6', '6', '4', '0', '0', '0']
     },
-    'PM PBM GZH': {
+    '9x18mm PM PBM GZH': {
         'caliber': '9x18mm',
         'damage': '40',
         'pen': '28',
@@ -462,7 +462,7 @@ AMMO_DATA = {
         'speed': '519',
         'armor': ['6', '6', '5', '1', '0', '0']
     },
-    'TT LRNPC': {
+    '7.62x25mm TT LRNPC': {
         'caliber': '7.62x25mm',
         'damage': '66',
         'pen': '7',
@@ -472,7 +472,7 @@ AMMO_DATA = {
         'speed': '385',
         'armor': ['5', '0', '0', '0', '0', '0']
     },
-    'TT LRN': {
+    '7.62x25mm TT LRN': {
         'caliber': '7.62x25mm',
         'damage': '64',
         'pen': '8',
@@ -482,7 +482,7 @@ AMMO_DATA = {
         'speed': '375',
         'armor': ['5', '0', '0', '0', '0', '0']
     },
-    'TT FMJ43': {
+    '7.62x25mm TT FMJ43': {
         'caliber': '7.62x25mm',
         'damage': '60',
         'pen': '11',
@@ -492,7 +492,7 @@ AMMO_DATA = {
         'speed': '427',
         'armor': ['6', '1', '0', '0', '0', '0']
     },
-    'TT AKBS': {
+    '7.62x25mm TT AKBS': {
         'caliber': '7.62x25mm',
         'damage': '58',
         'pen': '12',
@@ -502,7 +502,7 @@ AMMO_DATA = {
         'speed': '425',
         'armor': ['6', '2', '0', '0', '0', '0']
     },
-    'TT P GL': {
+    '7.62x25mm TT P GL': {
         'caliber': '7.62x25mm',
         'damage': '58',
         'pen': '14',
@@ -512,7 +512,7 @@ AMMO_DATA = {
         'speed': '430',
         'armor': ['6', '3', '0', '0', '0', '0']
     },
-    'TT PT GZH (TRACER)': {
+    '7.62x25mm TT PT GZH (TRACER)': {
         'caliber': '7.62x25mm',
         'damage': '55',
         'pen': '18',
@@ -522,7 +522,7 @@ AMMO_DATA = {
         'speed': '415',
         'armor': ['6', '4', '0', '0', '0', '0']
     },
-    'TT PST GZH': {
+    '7.62x25mm TT PST GZH': {
         'caliber': '7.62x25mm',
         'damage': '50',
         'pen': '25',
@@ -532,7 +532,7 @@ AMMO_DATA = {
         'speed': '430',
         'armor': ['6', '6', '4', '1', '0', '0']
     },
-    'RIP': {
+    '9x19mm RIP': {
         'caliber': '9x19mm',
         'damage': '102',
         'pen': '2',
@@ -542,7 +542,7 @@ AMMO_DATA = {
         'speed': '381',
         'armor': ['0', '0', '0', '0', '0', '0']
     },
-    'QUAKEMAKER': {
+    '9x19mm QUAKEMAKER': {
         'caliber': '9x19mm',
         'damage': '85',
         'pen': '8',
@@ -552,7 +552,7 @@ AMMO_DATA = {
         'speed': '290',
         'armor': ['6', '1', '0', '0', '0', '0']
     },
-    'PSO GZH': {
+    '9x19mm PSO GZH': {
         'caliber': '9x19mm',
         'damage': '59',
         'pen': '10',
@@ -562,7 +562,7 @@ AMMO_DATA = {
         'speed': '340',
         'armor': ['6', '2', '0', '0', '0', '0']
     },
-    'LUGER CCI': {
+    '9x19mm LUGER CCI': {
         'caliber': '9x19mm',
         'damage': '70',
         'pen': '10',
@@ -572,7 +572,7 @@ AMMO_DATA = {
         'speed': '420',
         'armor': ['6', '2', '0', '0', '0', '0']
     },
-    'T GZH (TRACER)': {
+    '9x19mm T GZH (TRACER)': {
         'caliber': '9x19mm',
         'damage': '58',
         'pen': '14',
@@ -582,7 +582,7 @@ AMMO_DATA = {
         'speed': '365',
         'armor': ['6', '3', '1', '0', '0', '0']
     },
-    'M882': {
+    '9x19mm M882': {
         'caliber': '9x19mm',
         'damage': '56',
         'pen': '18',
@@ -592,7 +592,7 @@ AMMO_DATA = {
         'speed': '385',
         'armor': ['6', '5', '2', '0', '0', '0']
     },
-    'PST GZH': {
+    '9x19mm PST GZH': {
         'caliber': '9x19mm',
         'damage': '54',
         'pen': '20',
@@ -602,7 +602,7 @@ AMMO_DATA = {
         'speed': '457',
         'armor': ['6', '6', '2', '0', '0', '0']
     },
-    'AP 6.3': {
+    '9x19mm AP 6.3': {
         'caliber': '9x19mm',
         'damage': '52',
         'pen': '30',
@@ -612,7 +612,7 @@ AMMO_DATA = {
         'speed': '392',
         'armor': ['6', '6', '6', '4', '2', '1']
     },
-    'PBP GZH': {
+    '9x19mm PBP GZH': {
         'caliber': '9x19mm',
         'damage': '44',
         'pen': '39',
@@ -622,7 +622,7 @@ AMMO_DATA = {
         'speed': '560',
         'armor': ['6', '6', '6', '5', '4', '3']
     },
-    'ACP RIP': {
+    '.45 ACP RIP': {
         'caliber': '.45',
         'damage': '130',
         'pen': '3',
@@ -632,7 +632,7 @@ AMMO_DATA = {
         'speed': '293',
         'armor': ['1', '0', '0', '0', '0', '0']
     },
-    'ACP HYDRA-SHOK': {
+    '.45 ACP HYDRA-SHOK': {
         'caliber': '.45',
         'damage': '100',
         'pen': '13',
@@ -642,7 +642,7 @@ AMMO_DATA = {
         'speed': '274',
         'armor': ['6', '3', '0', '0', '0', '0']
     },
-    'ACP LASERMATCH FMJ (TRACER)': {
+    '.45 ACP LASERMATCH FMJ (TRACER)': {
         'caliber': '.45',
         'damage': '76',
         'pen': '19',
@@ -652,7 +652,7 @@ AMMO_DATA = {
         'speed': '290',
         'armor': ['6', '5', '1', '0', '0', '0']
     },
-    'ACP MATCH FMJ': {
+    '.45 ACP MATCH FMJ': {
         'caliber': '.45',
         'damage': '72',
         'pen': '25',
@@ -662,7 +662,7 @@ AMMO_DATA = {
         'speed': '340',
         'armor': ['6', '6', '3', '1', '0', '0']
     },
-    'ACP AP': {
+    '.45 ACP AP': {
         'caliber': '.45',
         'damage': '66',
         'pen': '38',
@@ -672,7 +672,7 @@ AMMO_DATA = {
         'speed': '299',
         'armor': ['6', '6', '6', '5', '4', '2']
     },
-    'AE JHP': {
+    '.50 AE JHP': {
         'caliber': '.50',
         'damage': '147',
         'pen': '12',
@@ -682,7 +682,7 @@ AMMO_DATA = {
         'speed': '440',
         'armor': ['1', '0', '0', '0', '0', '0']
     },
-    'HAWK JSP': {
+    '.50 HAWK JSP': {
         'caliber': '.50',
         'damage': '122',
         'pen': '26',
@@ -692,7 +692,7 @@ AMMO_DATA = {
         'speed': '465',
         'armor': ['6', '6', '4', '1', '0', '0']
     },
-    'AE COPPER SOLID': {
+    '.50 AE COPPER SOLID': {
         'caliber': '.50',
         'damage': '94',
         'pen': '33',
@@ -702,7 +702,7 @@ AMMO_DATA = {
         'speed': '460',
         'armor': ['6', '6', '6', '5', '3', '2']
     },
-    'AE FMJ': {
+    '.50 AE FMJ': {
         'caliber': '.50',
         'damage': '85',
         'pen': '40',
@@ -712,7 +712,7 @@ AMMO_DATA = {
         'speed': '440',
         'armor': ['6', '6', '6', '6', '4', '3']
     },
-    'PE GZH': {
+    '9x21mm PE GZH': {
         'caliber': '9x21mm',
         'damage': '80',
         'pen': '15',
@@ -722,7 +722,7 @@ AMMO_DATA = {
         'speed': '415',
         'armor': ['6', '2', '0', '0', '0', '0']
     },
-    'P GZH': {
+    '9x21mm P GZH': {
         'caliber': '9x21mm',
         'damage': '65',
         'pen': '18',
@@ -732,7 +732,7 @@ AMMO_DATA = {
         'speed': '413',
         'armor': ['6', '3', '0', '0', '0', '0']
     },
-    'PS GZH': {
+    '9x21mm PS GZH': {
         'caliber': '9x21mm',
         'damage': '59',
         'pen': '22',
@@ -742,7 +742,7 @@ AMMO_DATA = {
         'speed': '410',
         'armor': ['6', '6', '3', '1', '0', '0']
     },
-    '7U4': {
+    '9x21mm 7U4': {
         'caliber': '9x21mm',
         'damage': '53',
         'pen': '27',
@@ -752,7 +752,7 @@ AMMO_DATA = {
         'speed': '300',
         'armor': ['6', '6', '5', '3', '1', '0']
     },
-    'BT GZH (TRACER)': {
+    '9x21mm BT GZH (TRACER)': {
         'caliber': '9x21mm',
         'damage': '52',
         'pen': '32',
@@ -762,7 +762,7 @@ AMMO_DATA = {
         'speed': '410',
         'armor': ['6', '6', '6', '4', '3', '1']
     },
-    '7N42': {
+    '9x21mm 7N42': {
         'caliber': '9x21mm',
         'damage': '49',
         'pen': '38',
@@ -772,7 +772,7 @@ AMMO_DATA = {
         'speed': '400',
         'armor': ['6', '6', '6', '6', '4', '3']
     },
-    'SOFT POINT': {
+    '.357 Magnum SOFT POINT': {
         'caliber': '.357 Magnum',
         'damage': '108',
         'pen': '12',
@@ -782,7 +782,7 @@ AMMO_DATA = {
         'speed': '455',
         'armor': ['6', '1', '0', '0', '0', '0']
     },
-    'HP': {
+    '.357 Magnum HP': {
         'caliber': '.357 Magnum',
         'damage': '99',
         'pen': '18',
@@ -792,7 +792,7 @@ AMMO_DATA = {
         'speed': '481',
         'armor': ['6', '3', '0', '0', '0', '0']
     },
-    'JHP': {
+    '.357 Magnum JHP': {
         'caliber': '.357 Magnum',
         'damage': '88',
         'pen': '24',
@@ -802,7 +802,7 @@ AMMO_DATA = {
         'speed': '425',
         'armor': ['6', '6', '2', '0', '0', '0']
     },
-    'FMJ': {
+    '.357 Magnum FMJ': {
         'caliber': '.357 Magnum',
         'damage': '70',
         'pen': '35',
@@ -812,7 +812,7 @@ AMMO_DATA = {
         'speed': '385',
         'armor': ['6', '6', '6', '2', '1', '0']
     },
-    'R37.F': {
+    '5.7x28 mm R37.F': {
         'caliber': '5.7x28 mm',
         'damage': '98',
         'pen': '8',
@@ -822,7 +822,7 @@ AMMO_DATA = {
         'speed': '729',
         'armor': ['4', '0', '0', '0', '0', '0']
     },
-    'SS198LF': {
+    '5.7x28 mm SS198LF': {
         'caliber': '5.7x28 mm',
         'damage': '70',
         'pen': '17',
@@ -832,7 +832,7 @@ AMMO_DATA = {
         'speed': '792',
         'armor': ['6', '4', '1', '0', '0', '0']
     },
-    'R37.X': {
+    '5.7x28 mm R37.X': {
         'caliber': '5.7x28 mm',
         'damage': '81',
         'pen': '11',
@@ -842,7 +842,7 @@ AMMO_DATA = {
         'speed': '724',
         'armor': ['6', '1', '0', '0', '0', '0']
     },
-    'SS197SR': {
+    '5.7x28 mm SS197SR': {
         'caliber': '5.7x28 mm',
         'damage': '62',
         'pen': '25',
@@ -852,7 +852,7 @@ AMMO_DATA = {
         'speed': '594',
         'armor': ['6', '6', '4', '1', '0', '0']
     },
-    'L191 (TRACER)': {
+    '5.7x28 mm L191 (TRACER)': {
         'caliber': '5.7x28 mm',
         'damage': '53',
         'pen': '33',
@@ -862,7 +862,7 @@ AMMO_DATA = {
         'speed': '715',
         'armor': ['6', '6', '6', '3', '2', '2']
     },
-    'SB193': {
+    '5.7x28 mm SB193': {
         'caliber': '5.7x28 mm',
         'damage': '59',
         'pen': '27',
@@ -872,7 +872,7 @@ AMMO_DATA = {
         'speed': '299',
         'armor': ['6', '6', '5', '2', '1', '0']
     },
-    'SS190': {
+    '5.7x28 mm SS190': {
         'caliber': '5.7x28 mm',
         'damage': '49',
         'pen': '37',
@@ -882,7 +882,7 @@ AMMO_DATA = {
         'speed': '715',
         'armor': ['6', '6', '6', '5', '4', '3']
     },
-    'ACTION SX': {
+    '4.6x30 mm ACTION SX': {
         'caliber': '4.6x30 mm',
         'damage': '65',
         'pen': '18',
@@ -892,7 +892,7 @@ AMMO_DATA = {
         'speed': '690',
         'armor': ['6', '5', '1', '0', '0', '0']
     },
-    'SUBSONIC SX': {
+    '4.6x30 mm SUBSONIC SX': {
         'caliber': '4.6x30 mm',
         'damage': '52',
         'pen': '23',
@@ -902,7 +902,7 @@ AMMO_DATA = {
         'speed': '290',
         'armor': ['6', '6', '3', '0', '0', '0']
     },
-    'JSP SX': {
+    '4.6x30 mm JSP SX': {
         'caliber': '4.6x30 mm',
         'damage': '46',
         'pen': '32',
@@ -912,7 +912,7 @@ AMMO_DATA = {
         'speed': '579',
         'armor': ['6', '6', '6', '4', '2', '1']
     },
-    'FMJ SX': {
+    '4.6x30 mm FMJ SX': {
         'caliber': '4.6x30 mm',
         'damage': '43',
         'pen': '40',
@@ -922,7 +922,7 @@ AMMO_DATA = {
         'speed': '620',
         'armor': ['6', '6', '6', '6', '4', '3']
     },
-    'AP SX': {
+    '4.6x30 mm AP SX': {
         'caliber': '4.6x30 mm',
         'damage': '35',
         'pen': '53',
@@ -932,7 +932,7 @@ AMMO_DATA = {
         'speed': '680',
         'armor': ['6', '6', '6', '6', '6', '5']
     },
-    'FMJ': {
+    '9x39mm FMJ': {
         'caliber': '9x39mm',
         'damage': '75',
         'pen': '17',
@@ -942,7 +942,7 @@ AMMO_DATA = {
         'speed': '330',
         'armor': ['6', '5', '2', '0', '0', '0']
     },
-    'SP-5 GS': {
+    '9x39mm SP-5 GS': {
         'caliber': '9x39mm',
         'damage': '71',
         'pen': '28',
@@ -952,7 +952,7 @@ AMMO_DATA = {
         'speed': '290',
         'armor': ['6', '6', '5', '2', '1', '0']
     },
-    'SPP GS': {
+    '9x39mm SPP GS': {
         'caliber': '9x39mm',
         'damage': '68',
         'pen': '35',
@@ -962,7 +962,7 @@ AMMO_DATA = {
         'speed': '310',
         'armor': ['6', '6', '6', '5', '3', '2']
     },
-    'PAB-9 GS': {
+    '9x39mm PAB-9 GS': {
         'caliber': '9x39mm',
         'damage': '62',
         'pen': '43',
@@ -972,7 +972,7 @@ AMMO_DATA = {
         'speed': '320',
         'armor': ['6', '6', '6', '6', '5', '4']
     },
-    'SP-6 GS': {
+    '9x39mm SP-6 GS': {
         'caliber': '9x39mm',
         'damage': '60',
         'pen': '48',
@@ -982,7 +982,7 @@ AMMO_DATA = {
         'speed': '305',
         'armor': ['6', '6', '6', '6', '5', '5']
     },
-    'BP GS': {
+    '9x39mm BP GS': {
         'caliber': '9x39mm',
         'damage': '58',
         'pen': '54',
@@ -992,7 +992,7 @@ AMMO_DATA = {
         'speed': '295',
         'armor': ['6', '6', '6', '6', '6', '5']
     },
-    'TKM GEKSA': {
+    '.366 TKM GEKSA': {
         'caliber': '.366',
         'damage': '110',
         'pen': '14',
@@ -1002,7 +1002,7 @@ AMMO_DATA = {
         'speed': '550',
         'armor': ['6', '3', '0', '0', '0', '0']
     },
-    'TKM FMJ': {
+    '.366 TKM FMJ': {
         'caliber': '.366',
         'damage': '98',
         'pen': '23',
@@ -1012,7 +1012,7 @@ AMMO_DATA = {
         'speed': '580',
         'armor': ['6', '6', '4', '1', '0', '0']
     },
-    'TKM EKO': {
+    '.366 TKM EKO': {
         'caliber': '.366',
         'damage': '73',
         'pen': '30',
@@ -1022,7 +1022,7 @@ AMMO_DATA = {
         'speed': '770',
         'armor': ['6', '6', '6', '3', '1', '0']
     },
-    'TKM AP-M': {
+    '.366 TKM AP-M': {
         'caliber': '.366',
         'damage': '90',
         'pen': '42',
@@ -1032,7 +1032,7 @@ AMMO_DATA = {
         'speed': '602',
         'armor': ['6', '6', '6', '6', '5', '4']
     },
-    'HP': {
+    '5.45x39 mm HP': {
         'caliber': '5.45x39 mm',
         'damage': '76',
         'pen': '9',
@@ -1042,7 +1042,7 @@ AMMO_DATA = {
         'speed': '884',
         'armor': ['5', '0', '0', '0', '0', '0']
     },
-    'PRS GS': {
+    '5.45x39 mm PRS GS': {
         'caliber': '5.45x39 mm',
         'damage': '70',
         'pen': '13',
@@ -1052,7 +1052,7 @@ AMMO_DATA = {
         'speed': '866',
         'armor': ['6', '1', '0', '0', '0', '0']
     },
-    'SP': {
+    '5.45x39 mm SP': {
         'caliber': '5.45x39 mm',
         'damage': '67',
         'pen': '15',
@@ -1062,7 +1062,7 @@ AMMO_DATA = {
         'speed': '873',
         'armor': ['6', '2', '0', '0', '0', '0']
     },
-    'US GS': {
+    '5.45x39 mm US GS': {
         'caliber': '5.45x39 mm',
         'damage': '65',
         'pen': '17',
@@ -1072,7 +1072,7 @@ AMMO_DATA = {
         'speed': '303',
         'armor': ['6', '5', '1', '0', '0', '0']
     },
-    'T GS (TRACER)': {
+    '5.45x39 mm T GS (TRACER)': {
         'caliber': '5.45x39 mm',
         'damage': '59',
         'pen': '20',
@@ -1082,7 +1082,7 @@ AMMO_DATA = {
         'speed': '883',
         'armor': ['6', '6', '1', '0', '0', '0']
     },
-    'FMJ': {
+    '5.45x39 mm FMJ': {
         'caliber': '5.45x39 mm',
         'damage': '55',
         'pen': '24',
@@ -1092,7 +1092,7 @@ AMMO_DATA = {
         'speed': '884',
         'armor': ['6', '6', '3', '2', '0', '0']
     },
-    'PS GS': {
+    '5.45x39 mm PS GS': {
         'caliber': '5.45x39 mm',
         'damage': '56',
         'pen': '28',
@@ -1102,7 +1102,7 @@ AMMO_DATA = {
         'speed': '890',
         'armor': ['6', '6', '5', '3', '1', '0']
     },
-    'PP GS': {
+    '5.45x39 mm PP GS': {
         'caliber': '5.45x39 mm',
         'damage': '51',
         'pen': '34',
@@ -1112,7 +1112,7 @@ AMMO_DATA = {
         'speed': '886',
         'armor': ['6', '6', '6', '4', '3', '1']
     },
-    'BT GS (TRACER)': {
+    '5.45x39 mm BT GS (TRACER)': {
         'caliber': '5.45x39 mm',
         'damage': '54',
         'pen': '37',
@@ -1122,7 +1122,7 @@ AMMO_DATA = {
         'speed': '880',
         'armor': ['6', '6', '6', '5', '3', '2']
     },
-    '7N40': {
+    '5.45x39 mm 7N40': {
         'caliber': '5.45x39 mm',
         'damage': '55',
         'pen': '42',
@@ -1132,7 +1132,7 @@ AMMO_DATA = {
         'speed': '915',
         'armor': ['6', '6', '6', '6', '4', '3']
     },
-    'BP GS': {
+    '5.45x39 mm BP GS': {
         'caliber': '5.45x39 mm',
         'damage': '48',
         'pen': '45',
@@ -1142,7 +1142,7 @@ AMMO_DATA = {
         'speed': '890',
         'armor': ['6', '6', '6', '6', '5', '4']
     },
-    'BS GS': {
+    '5.45x39 mm BS GS': {
         'caliber': '5.45x39 mm',
         'damage': '45',
         'pen': '54',
@@ -1152,7 +1152,7 @@ AMMO_DATA = {
         'speed': '830',
         'armor': ['6', '6', '6', '6', '6', '5']
     },
-    'PPBS GS IGOLNIK': {
+    '5.45x39 mm PPBS GS IGOLNIK': {
         'caliber': '5.45x39 mm',
         'damage': '37',
         'pen': '62',
@@ -1162,7 +1162,7 @@ AMMO_DATA = {
         'speed': '905',
         'armor': ['6', '6', '6', '6', '6', '6']
     },
-    'WARMAGEDDON': {
+    '5.56x45 mm WARMAGEDDON': {
         'caliber': '5.56x45 mm',
         'damage': '88',
         'pen': '3',
@@ -1172,7 +1172,7 @@ AMMO_DATA = {
         'speed': '936',
         'armor': ['1', '0', '0', '0', '0', '0']
     },
-    'HP': {
+    '5.56x45 mm HP': {
         'caliber': '5.56x45 mm',
         'damage': '79',
         'pen': '7',
@@ -1182,7 +1182,7 @@ AMMO_DATA = {
         'speed': '947',
         'armor': ['4', '0', '0', '0', '0', '0']
     },
-    'MK 255 MOD 0 (RRLP)': {
+    '5.56x45 mm MK 255 MOD 0 (RRLP)': {
         'caliber': '5.56x45 mm',
         'damage': '72',
         'pen': '11',
@@ -1192,7 +1192,7 @@ AMMO_DATA = {
         'speed': '936',
         'armor': ['6', '1', '0', '0', '0', '0']
     },
-    'M856 (TRACER)': {
+    '5.56x45 mm M856 (TRACER)': {
         'caliber': '5.56x45 mm',
         'damage': '60',
         'pen': '18',
@@ -1202,7 +1202,7 @@ AMMO_DATA = {
         'speed': '874',
         'armor': ['6', '5', '1', '0', '0', '0']
     },
-    'FMJ': {
+    '5.56x45 mm FMJ': {
         'caliber': '5.56x45 mm',
         'damage': '57',
         'pen': '23',
@@ -1212,7 +1212,7 @@ AMMO_DATA = {
         'speed': '957',
         'armor': ['6', '6', '4', '1', '0', '0']
     },
-    'M855': {
+    '5.56x45 mm M855': {
         'caliber': '5.56x45 mm',
         'damage': '54',
         'pen': '31',
@@ -1222,7 +1222,7 @@ AMMO_DATA = {
         'speed': '922',
         'armor': ['6', '6', '5', '3', '2', '0']
     },
-    'MK 318 MOD 0 (SOST)': {
+    '5.56x45 mm MK 318 MOD 0 (SOST)': {
         'caliber': '5.56x45 mm',
         'damage': '53',
         'pen': '33',
@@ -1232,7 +1232,7 @@ AMMO_DATA = {
         'speed': '902',
         'armor': ['6', '6', '6', '4', '2', '1']
     },
-    'M856A1 (TRACER)': {
+    '5.56x45 mm M856A1 (TRACER)': {
         'caliber': '5.56x45 mm',
         'damage': '52',
         'pen': '38',
@@ -1242,7 +1242,7 @@ AMMO_DATA = {
         'speed': '940',
         'armor': ['6', '6', '6', '5', '3', '2']
     },
-    'M855A1': {
+    '5.56x45 mm M855A1': {
         'caliber': '5.56x45 mm',
         'damage': '49',
         'pen': '44',
@@ -1252,7 +1252,7 @@ AMMO_DATA = {
         'speed': '945',
         'armor': ['6', '6', '6', '6', '5', '4']
     },
-    'M995': {
+    '5.56x45 mm M995': {
         'caliber': '5.56x45 mm',
         'damage': '42',
         'pen': '53',
@@ -1262,7 +1262,7 @@ AMMO_DATA = {
         'speed': '1013',
         'armor': ['6', '6', '6', '6', '6', '5']
     },
-    'SSA AP': {
+    '5.56x45 mm SSA AP': {
         'caliber': '5.56x45 mm',
         'damage': '38',
         'pen': '57',
@@ -1272,7 +1272,7 @@ AMMO_DATA = {
         'speed': '1013',
         'armor': ['6', '6', '6', '6', '6', '5']
     },
-    'HP': {
+    '7.62x39 mm HP': {
         'caliber': '7.62x39 mm',
         'damage': '80',
         'pen': '15',
@@ -1282,7 +1282,7 @@ AMMO_DATA = {
         'speed': '754',
         'armor': ['6', '4', '1', '0', '0', '0']
     },
-    'SP': {
+    '7.62x39 mm SP': {
         'caliber': '7.62x39 mm',
         'damage': '68',
         'pen': '20',
@@ -1292,7 +1292,7 @@ AMMO_DATA = {
         'speed': '772',
         'armor': ['6', '6', '2', '0', '0', '0']
     },
-    'FMJ': {
+    '7.62x39 mm FMJ': {
         'caliber': '7.62x39 mm',
         'damage': '63',
         'pen': '26',
@@ -1302,7 +1302,7 @@ AMMO_DATA = {
         'speed': '775',
         'armor': ['6', '6', '4', '1', '0', '0']
     },
-    'US GZH': {
+    '7.62x39 mm US GZH': {
         'caliber': '7.62x39 mm',
         'damage': '56',
         'pen': '29',
@@ -1312,7 +1312,7 @@ AMMO_DATA = {
         'speed': '300',
         'armor': ['6', '6', '5', '3', '1', '0']
     },
-    'T-45M1 GZH (TRACER)': {
+    '7.62x39 mm T-45M1 GZH (TRACER)': {
         'caliber': '7.62x39 mm',
         'damage': '65',
         'pen': '30',
@@ -1322,7 +1322,7 @@ AMMO_DATA = {
         'speed': '720',
         'armor': ['6', '6', '6', '3', '1', '0']
     },
-    'PS GZH': {
+    '7.62x39 mm PS GZH': {
         'caliber': '7.62x39 mm',
         'damage': '61',
         'pen': '35',
@@ -1332,7 +1332,7 @@ AMMO_DATA = {
         'speed': '700',
         'armor': ['6', '6', '6', '5', '3', '2']
     },
-    'PP': {
+    '7.62x39 mm PP': {
         'caliber': '7.62x39 mm',
         'damage': '59',
         'pen': '41',
@@ -1342,7 +1342,7 @@ AMMO_DATA = {
         'speed': '732',
         'armor': ['6', '6', '6', '6', '4', '3']
     },
-    'BP GZH': {
+    '7.62x39 mm BP GZH': {
         'caliber': '7.62x39 mm',
         'damage': '58',
         'pen': '47',
@@ -1352,7 +1352,7 @@ AMMO_DATA = {
         'speed': '730',
         'armor': ['6', '6', '6', '6', '5', '4']
     },
-    'MAI AP': {
+    '7.62x39 mm MAI AP': {
         'caliber': '7.62x39 mm',
         'damage': '53',
         'pen': '58',
@@ -1362,7 +1362,7 @@ AMMO_DATA = {
         'speed': '730',
         'armor': ['6', '6', '6', '6', '6', '5']
     },
-    'BLACKOUT WHISPER': {
+    '.300 blk BLACKOUT WHISPER': {
         'caliber': '.300 blk',
         'damage': '90',
         'pen': '14',
@@ -1372,7 +1372,7 @@ AMMO_DATA = {
         'speed': '853',
         'armor': ['6', '4', '2', '1', '0', '0']
     },
-    'BLACKOUT V-MAX': {
+    '.300 blk BLACKOUT V-MAX': {
         'caliber': '.300 blk',
         'damage': '72',
         'pen': '20',
@@ -1382,7 +1382,7 @@ AMMO_DATA = {
         'speed': '723',
         'armor': ['6', '6', '4', '3', '1', '0']
     },
-    'BLACKOUT BCP FMJ': {
+    '.300 blk BLACKOUT BCP FMJ': {
         'caliber': '.300 blk',
         'damage': '60',
         'pen': '30',
@@ -1392,7 +1392,7 @@ AMMO_DATA = {
         'speed': '605',
         'armor': ['6', '6', '6', '3', '2', '0']
     },
-    'BLACKOUT M62 (TRACER)': {
+    '.300 blk BLACKOUT M62 (TRACER)': {
         'caliber': '.300 blk',
         'damage': '54',
         'pen': '36',
@@ -1402,7 +1402,7 @@ AMMO_DATA = {
         'speed': '442',
         'armor': ['6', '6', '6', '5', '4', '2']
     },
-    'BLACKOUT CBJ': {
+    '.300 blk BLACKOUT CBJ': {
         'caliber': '.300 blk',
         'damage': '58',
         'pen': '43',
@@ -1412,7 +1412,7 @@ AMMO_DATA = {
         'speed': '725',
         'armor': ['6', '6', '6', '6', '5', '3']
     },
-    'BLACKOUT AP': {
+    '.300 blk BLACKOUT AP': {
         'caliber': '.300 blk',
         'damage': '51',
         'pen': '48',
@@ -1422,7 +1422,7 @@ AMMO_DATA = {
         'speed': '635',
         'armor': ['6', '6', '6', '6', '5', '4']
     },
-    'SIG FMJ': {
+    '6.8x51mm SIG FMJ': {
         'caliber': '6.8x51mm',
         'damage': '80',
         'pen': '36',
@@ -1432,7 +1432,7 @@ AMMO_DATA = {
         'speed': '899',
         'armor': ['6', '6', '6', '5', '4', '2']
     },
-    'SIG HYBRID': {
+    '6.8x51mm SIG HYBRID': {
         'caliber': '6.8x51mm',
         'damage': '72',
         'pen': '47',
@@ -1442,7 +1442,7 @@ AMMO_DATA = {
         'speed': '914',
         'armor': ['6', '6', '6', '6', '5', '5']
     },
-    'ULTRA NOSLER': {
+    '7.62x51 mm ULTRA NOSLER': {
         'caliber': '7.62x51 mm',
         'damage': '105',
         'pen': '15',
@@ -1452,7 +1452,7 @@ AMMO_DATA = {
         'speed': '823',
         'armor': ['6', '4', '0', '0', '0', '0']
     },
-    'TCW SP': {
+    '7.62x51 mm TCW SP': {
         'caliber': '7.62x51 mm',
         'damage': '85',
         'pen': '30',
@@ -1462,7 +1462,7 @@ AMMO_DATA = {
         'speed': '771',
         'armor': ['6', '6', '6', '3', '2', '0']
     },
-    'BCP FMJ': {
+    '7.62x51 mm BCP FMJ': {
         'caliber': '7.62x51 mm',
         'damage': '83',
         'pen': '37',
@@ -1472,7 +1472,7 @@ AMMO_DATA = {
         'speed': '800',
         'armor': ['6', '6', '6', '4', '3', '2']
     },
-    'M62 TRACER': {
+    '7.62x51 mm M62 TRACER': {
         'caliber': '7.62x51 mm',
         'damage': '82',
         'pen': '42',
@@ -1482,7 +1482,7 @@ AMMO_DATA = {
         'speed': '816',
         'armor': ['6', '6', '6', '6', '5', '4']
     },
-    'M80': {
+    '7.62x51 mm M80': {
         'caliber': '7.62x51 mm',
         'damage': '80',
         'pen': '43',
@@ -1492,7 +1492,7 @@ AMMO_DATA = {
         'speed': '838',
         'armor': ['6', '6', '6', '6', '5', '5']
     },
-    'M61': {
+    '7.62x51 mm M61': {
         'caliber': '7.62x51 mm',
         'damage': '75',
         'pen': '55',
@@ -1502,7 +1502,7 @@ AMMO_DATA = {
         'speed': '849',
         'armor': ['6', '6', '6', '6', '6', '5']
     },
-    'M993': {
+    '7.62x51 mm M993': {
         'caliber': '7.62x51 mm',
         'damage': '70',
         'pen': '65',
@@ -1512,7 +1512,7 @@ AMMO_DATA = {
         'speed': '910',
         'armor': ['6', '6', '6', '6', '6', '6']
     },
-    'M80A1': {
+    '7.62x51 mm M80A1': {
         'caliber': '7.62x51 mm',
         'damage': '73',
         'pen': '60',
@@ -1522,7 +1522,7 @@ AMMO_DATA = {
         'speed': '899',
         'armor': ['6', '6', '6', '6', '6', '6']
     },
-    'BALL 11 LONG RANGE': {
+    '7.62x51 mm BALL 11 LONG RANGE': {
         'caliber': '7.62x51 mm',
         'damage': '95',
         'pen': '59',
@@ -1532,7 +1532,7 @@ AMMO_DATA = {
         'speed': '805',
         'armor': ['6', '6', '6', '6', '6', '6']
     },
-    'HP BT (TRACER)': {
+    '7.62x54R HP BT (TRACER)': {
         'caliber': '7.62x54R',
         'damage': '102',
         'pen': '23',
@@ -1542,7 +1542,7 @@ AMMO_DATA = {
         'speed': '807',
         'armor': ['6', '6', '3', '1', '0', '0']
     },
-    'SP BT (TRACER)': {
+    '7.62x54R SP BT (TRACER)': {
         'caliber': '7.62x54R',
         'damage': '92',
         'pen': '27',
@@ -1552,7 +1552,7 @@ AMMO_DATA = {
         'speed': '703',
         'armor': ['6', '6', '5', '4', '2', '1']
     },
-    'FMJ': {
+    '7.62x54R FMJ': {
         'caliber': '7.62x54R',
         'damage': '84',
         'pen': '33',
@@ -1562,7 +1562,7 @@ AMMO_DATA = {
         'speed': '760',
         'armor': ['6', '6', '6', '5', '3', '2']
     },
-    'T-46M GZH (TRACER)': {
+    '7.62x54R T-46M GZH (TRACER)': {
         'caliber': '7.62x54R',
         'damage': '82',
         'pen': '41',
@@ -1572,7 +1572,7 @@ AMMO_DATA = {
         'speed': '800',
         'armor': ['6', '6', '6', '6', '4', '3']
     },
-    'LPS GZH': {
+    '7.62x54R LPS GZH': {
         'caliber': '7.62x54R',
         'damage': '81',
         'pen': '42',
@@ -1582,7 +1582,7 @@ AMMO_DATA = {
         'speed': '865',
         'armor': ['6', '6', '6', '6', '4', '3']
     },
-    'PS GZH': {
+    '7.62x54R PS GZH': {
         'caliber': '7.62x54R',
         'damage': '84',
         'pen': '45',
@@ -1592,7 +1592,7 @@ AMMO_DATA = {
         'speed': '875',
         'armor': ['6', '6', '6', '6', '5', '5']
     },
-    'BT GZH (TRACER)': {
+    '7.62x54R BT GZH (TRACER)': {
         'caliber': '7.62x54R',
         'damage': '78',
         'pen': '55',
@@ -1602,7 +1602,7 @@ AMMO_DATA = {
         'speed': '875',
         'armor': ['6', '6', '6', '6', '6', '5']
     },
-    'SNB GZH': {
+    '7.62x54R SNB GZH': {
         'caliber': '7.62x54R',
         'damage': '75',
         'pen': '62',
@@ -1612,7 +1612,7 @@ AMMO_DATA = {
         'speed': '875',
         'armor': ['6', '6', '6', '6', '6', '6']
     },
-    'BS GS': {
+    '7.62x54R BS GS': {
         'caliber': '7.62x54R',
         'damage': '72',
         'pen': '70',
@@ -1622,7 +1622,7 @@ AMMO_DATA = {
         'speed': '785',
         'armor': ['6', '6', '6', '6', '6', '6']
     },
-    'TUNGSTEN CARBIDE AP': {
+    '7.62x54R TUNGSTEN CARBIDE AP': {
         'caliber': '7.62x54R',
         'damage': '98',
         'pen': '61',
@@ -1632,7 +1632,7 @@ AMMO_DATA = {
         'speed': '984',
         'armor': ['6', '6', '6', '6', '6', '6']
     },
-    'PS12A': {
+    '12.7x55 mm PS12A': {
         'caliber': '12.7x55 mm',
         'damage': '165',
         'pen': '10',
@@ -1642,7 +1642,7 @@ AMMO_DATA = {
         'speed': '290',
         'armor': ['6', '0', '0', '0', '0', '0']
     },
-    'PS12': {
+    '12.7x55 mm PS12': {
         'caliber': '12.7x55 mm',
         'damage': '115',
         'pen': '28',
@@ -1652,7 +1652,7 @@ AMMO_DATA = {
         'speed': '285',
         'armor': ['6', '6', '5', '2', '1', '0']
     },
-    'PS12B': {
+    '12.7x55 mm PS12B': {
         'caliber': '12.7x55 mm',
         'damage': '102',
         'pen': '46',
@@ -1662,7 +1662,7 @@ AMMO_DATA = {
         'speed': '300',
         'armor': ['6', '6', '6', '6', '5', '4']
     },
-    'HP': {
+    '.50 BMG HP': {
         'caliber': '.50 BMG',
         'damage': '260',
         'pen': '34',
@@ -1672,7 +1672,7 @@ AMMO_DATA = {
         'speed': '880',
         'armor': ['6', '6', '6', '4', '3', '1']
     },
-    'M21 (TRACER)': {
+    '.50 BMG M21 (TRACER)': {
         'caliber': '.50 BMG',
         'damage': '220',
         'pen': '45',
@@ -1682,7 +1682,7 @@ AMMO_DATA = {
         'speed': '867',
         'armor': ['6', '6', '6', '6', '5', '4']
     },
-    'M33': {
+    '.50 BMG M33': {
         'caliber': '.50 BMG',
         'damage': '190',
         'pen': '56',
@@ -1692,7 +1692,7 @@ AMMO_DATA = {
         'speed': '887',
         'armor': ['6', '6', '6', '6', '6', '5']
     },
-    'M903 SLAP': {
+    '.50 BMG M903 SLAP': {
         'caliber': '.50 BMG',
         'damage': '160',
         'pen': '115',
@@ -1702,7 +1702,7 @@ AMMO_DATA = {
         'speed': '1220',
         'armor': ['6', '6', '6', '6', '6', '6']
     },
-    'ME LOKT': {
+    '.308 Marlin Express ME LOKT': {
         'caliber': '.308 Marlin Express',
         'damage': '96',
         'pen': '24',
@@ -1712,7 +1712,7 @@ AMMO_DATA = {
         'speed': '838',
         'armor': ['6', '6', '3', '2', '0', '0']
     },
-    'ME': {
+    '.308 Marlin Express ME': {
         'caliber': '.308 Marlin Express',
         'damage': '80',
         'pen': '42',
@@ -1722,7 +1722,7 @@ AMMO_DATA = {
         'speed': '838',
         'armor': ['6', '6', '6', '6', '4', '3']
     },
-    'TAC-X': {
+    '.338 Lapua Magnum TAC-X': {
         'caliber': '.338 Lapua Magnum',
         'damage': '196',
         'pen': '18',
@@ -1732,7 +1732,7 @@ AMMO_DATA = {
         'speed': '880',
         'armor': ['6', '5', '3', '1', '0', '0']
     },
-    'UCW': {
+    '.338 Lapua Magnum UCW': {
         'caliber': '.338 Lapua Magnum',
         'damage': '142',
         'pen': '32',
@@ -1742,7 +1742,7 @@ AMMO_DATA = {
         'speed': '849',
         'armor': ['6', '6', '6', '5', '4', '2']
     },
-    'FMJ': {
+    '.338 Lapua Magnum FMJ': {
         'caliber': '.338 Lapua Magnum',
         'damage': '122',
         'pen': '47',
@@ -1752,7 +1752,7 @@ AMMO_DATA = {
         'speed': '900',
         'armor': ['6', '6', '6', '6', '5', '5']
     },
-    'AP': {
+    '.338 Lapua Magnum AP': {
         'caliber': '.338 Lapua Magnum',
         'damage': '115',
         'pen': '79',
@@ -1762,7 +1762,7 @@ AMMO_DATA = {
         'speed': '849',
         'armor': ['6', '6', '6', '6', '6', '6']
     },
-    'SP': {
+    '9.3x64 mm SP': {
         'caliber': '9.3x64 mm',
         'damage': '129',
         'pen': '37',
@@ -1772,7 +1772,7 @@ AMMO_DATA = {
         'speed': '697',
         'armor': ['-', '-', '-', '-', '-', '-']
     },
-    'FMJ': {
+    '9.3x64 mm FMJ': {
         'caliber': '9.3x64 mm',
         'damage': '115',
         'pen': '44',
@@ -1782,7 +1782,7 @@ AMMO_DATA = {
         'speed': '793',
         'armor': ['-', '-', '-', '-', '-', '-']
     },
-    '7N33': {
+    '9.3x64 mm 7N33': {
         'caliber': '9.3x64 mm',
         'damage': '108',
         'pen': '56',
@@ -1792,7 +1792,7 @@ AMMO_DATA = {
         'speed': '790',
         'armor': ['-', '-', '-', '-', '-', '-']
     },
-    '30MM GRENADE': {
+    'Mounted Weapons 30MM GRENADE': {
         'caliber': 'Mounted Weapons',
         'damage': '199',
         'pen': '1',
@@ -1802,7 +1802,7 @@ AMMO_DATA = {
         'speed': '0%',
         'armor': ['0', '0', '0', '0', '0', '0']
     },
-    '12.7X108MM': {
+    'Mounted Weapons 12.7X108MM': {
         'caliber': 'Mounted Weapons',
         'damage': '182',
         'pen': '88',
@@ -1812,7 +1812,7 @@ AMMO_DATA = {
         'speed': '>1KM',
         'armor': ['6', '6', '6', '6', '6', '6']
     },
-    '12.7X108MM (TRACER)': {
+    'Mounted Weapons 12.7X108MM (TRACER)': {
         'caliber': 'Mounted Weapons',
         'damage': '199',
         'pen': '80',
@@ -1822,7 +1822,7 @@ AMMO_DATA = {
         'speed': '>1KM',
         'armor': ['6', '6', '6', '6', '6', '6']
     },
-    '40MM BUCKSHOT GRENADE': {
+    'Other 40MM BUCKSHOT GRENADE': {
         'caliber': 'Other',
         'damage': '15x160',
         'pen': '5',

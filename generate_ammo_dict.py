@@ -39,7 +39,10 @@ with open('municiones_completas.csv', 'r', encoding='utf-8') as f:
                 recoil = row[7] # Usually after Frag
                 accuracy = row[8]
             
-            out.write(f"    {repr(ammo_name)}: {{\n")
+            # Create key with caliber + ammo name
+            full_key = f"{caliber} {ammo_name}"
+            
+            out.write(f"    {repr(full_key)}: {{\n")
             out.write(f"        'caliber': {repr(caliber)},\n")
             out.write(f"        'damage': {repr(damage)},\n")
             out.write(f"        'pen': {repr(pen)},\n")
