@@ -669,20 +669,81 @@ async def mapas(ctx):
 @bot.command(name='help', aliases=['h'])
 async def help_command(ctx):
     """Show available commands"""
-    help_text = (
-        "🛠️ **Comandos disponibles:**\n"
-        "> Puedes usar `!` o `$` como prefijo\n"
-        "`!price <item> [cantidad]` → Muestra precios (ej: `!p m4a1 3`).\n"
-        "`!ammo <munición>` → Info de munición (ej: `!a m855a1`).\n"
-        "`!ammo <munición> all` → Info completa con todas las stats.\n"
-        "`!bosses` o `!b` → Muestra botones para elegir mapa.\n"
-        "`!bosses <mapa>` → Muestra bosses de ese mapa.\n"
-        "`!bosses <nombre>` → Busca un boss por nombre.\n"
-        "`!bosses all` → Lista compacta de todos los bosses.\n"
-        "`!mapas` o `!m` → Muestra botones para ver imágenes de mapas.\n"
-        "`!ping` → Verifica si el bot está activo.\n"
+    embed = discord.Embed(
+        title="🛠️ Comandos de KiraTarkov",
+        description="> Puedes usar `!` o `$` como prefijo para todos los comandos",
+        color=0x00ff00
     )
-    await ctx.send(help_text)
+    
+    # Precios
+    embed.add_field(
+        name="💰 Precios",
+        value=(
+            "`!price <item>` o `!p <item>`\n"
+            "Muestra el mejor precio de venta\n"
+            "`!price <item> <número>`\n"
+            "Muestra varios resultados (ej: `!p m4a1 3`)"
+        ),
+        inline=False
+    )
+    
+    # Munición
+    embed.add_field(
+        name="🔫 Munición",
+        value=(
+            "`!ammo <munición>` o `!a <munición>`\n"
+            "Info compacta de munición (ej: `!a m855a1`)\n"
+            "`!ammo <munición> all`\n"
+            "Info completa con todas las stats\n"
+            "`!aa <calibre>`\n"
+            "Lista todas las municiones de un calibre\n"
+            "(ej: `!aa 7.62x39`)"
+        ),
+        inline=False
+    )
+    
+    # Bosses
+    embed.add_field(
+        name="☠️ Bosses",
+        value=(
+            "`!bosses` o `!b`\n"
+            "Muestra botones para elegir mapa\n"
+            "`!bosses <mapa>`\n"
+            "Muestra bosses de ese mapa (ej: `!b Lighthouse`)\n"
+            "`!bosses <nombre>`\n"
+            "Busca un boss por nombre (ej: `!b Shturman`)\n"
+            "`!bosses all`\n"
+            "Lista compacta de todos los bosses"
+        ),
+        inline=False
+    )
+    
+    # Mapas
+    embed.add_field(
+        name="🗺️ Mapas",
+        value=(
+            "`!mapas` o `!m`\n"
+            "Muestra botones para ver imágenes de mapas\n"
+            "Haz clic en un mapa para ver su imagen"
+        ),
+        inline=False
+    )
+    
+    # Utilidades
+    embed.add_field(
+        name="⚙️ Utilidades",
+        value=(
+            "`!help` o `!h`\n"
+            "Muestra este mensaje de ayuda\n"
+            "`!ping`\n"
+            "Verifica si el bot está activo"
+        ),
+        inline=False
+    )
+    
+    embed.set_footer(text="KiraTarkov Bot • Datos de tarkov.dev")
+    await ctx.send(embed=embed)
+
 
 if __name__ == "__main__":
     if not TOKEN or TOKEN == "your_token_here":
