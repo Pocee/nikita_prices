@@ -260,8 +260,15 @@ async def ammo(ctx, *, args: str = None):
             # Single match found
             full_name, stats = matches[0]
             
+            # Clean name for API (remove caliber prefix to avoid formatting mismatches)
+            # API expects "M855A1", not "5.56x45 mm M855A1"
+            api_search_name = full_name
+            caliber = stats['caliber']
+            if full_name.startswith(caliber):
+                api_search_name = full_name[len(caliber):].strip()
+            
             # Get market data from API
-            market_items = tarkov_client.get_ammo_market_data(full_name)
+            market_items = tarkov_client.get_ammo_market_data(api_search_name)
             
             # Create embed
             embed = discord.Embed(
