@@ -29,7 +29,6 @@ print("\nRunning diagnostic query...")
 try:
     result = client.run_query(query)
     print(json.dumps(result, indent=2))
-#otro pene
+
 except Exception as e:
     print(f"Error: {e}")
-#peneeee

@@ -77,6 +77,13 @@ class TarkovClient:
                         }}
                     }}
                 }}
+                craftsFor {{
+                    station {{
+                        name
+                    }}
+                    level
+                    duration
+                }}
             }}
         }}
         """

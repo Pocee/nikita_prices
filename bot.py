@@ -203,7 +203,7 @@ async def ammo(ctx, *, args: str = None):
     
     async with ctx.typing():
         try:
-            from ammo_helper import find_ammo_stats, format_armor_effectiveness, format_trader_info
+            from ammo_helper import find_ammo_stats, format_armor_effectiveness, format_trader_info, format_crafting_info
             
             # Find ammo in static data
             matches = find_ammo_stats(ammo_name)
@@ -266,6 +266,10 @@ async def ammo(ctx, *, args: str = None):
             caliber = stats['caliber']
             if full_name.startswith(caliber):
                 api_search_name = full_name[len(caliber):].strip()
+            
+            # Remove text in parentheses (e.g. "(TRACER)", "(GL)") as API doesn't use them
+            if "(" in api_search_name:
+                api_search_name = api_search_name.split("(")[0].strip()
             
             # Get market data from API
             market_items = tarkov_client.get_ammo_market_data(api_search_name)
@@ -379,6 +383,23 @@ async def ammo(ctx, *, args: str = None):
                     embed.add_field(
                         name="💰 Where to Buy",
                         value="❌ Not available for purchase",
+                        inline=False
+                    )
+                
+                # Crafting Info
+                crafts_for = item.get('craftsFor', [])
+                crafting_info = format_crafting_info(crafts_for)
+                
+                if crafting_info:
+                    embed.add_field(
+                        name="🛠️ Crafting",
+                        value="\n".join(crafting_info),
+                        inline=False
+                    )
+                else:
+                    embed.add_field(
+                        name="🛠️ Crafting",
+                        value="❌ Not craftable",
                         inline=False
                     )
             else:

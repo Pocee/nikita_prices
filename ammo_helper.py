@@ -198,3 +198,32 @@ def get_available_calibers():
     for stats in AMMO_DATA.values():
         calibers.add(stats['caliber'])
     return sorted(calibers)
+
+
+def format_crafting_info(crafts_list):
+    """
+    Format crafting information
+    Returns: list of formatted strings
+    """
+    if not crafts_list:
+        return []
+        
+    crafts = []
+    for craft in crafts_list:
+        station = craft.get('station', {}).get('name', 'Unknown Station')
+        level = craft.get('level', '?')
+        duration = craft.get('duration', 0)
+        
+        # Format duration (seconds to H:M:S)
+        hours = duration // 3600
+        minutes = (duration % 3600) // 60
+        
+        time_str = ""
+        if hours > 0:
+            time_str += f"{hours}h "
+        time_str += f"{minutes}m"
+        
+        craft_str = f"🏗️ {station} (Lvl {level}) ⏱️ {time_str}"
+        crafts.append(craft_str)
+        
+    return crafts
