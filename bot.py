@@ -28,6 +28,21 @@ maps_cache = {
 }
 CACHE_DURATION = 300  # 5 minutes in seconds
 
+# Map name to file mapping for map images
+MAP_FILE_MAPPING = {
+    'Customs': 'customs.webp',
+    'Factory': 'factory.webp',
+    'Ground Zero': 'groundzero.webp',
+    'Interchange': 'interchange.webp',
+    'The Lab': 'labs.webp',
+    'Labyrinth': 'labyrinth.webp',
+    'Lighthouse': 'lighthouse.webp',
+    'Reserve': 'reserve.webp',
+    'Shoreline': 'shoreline.webp',
+    'Streets of Tarkov': 'streets.webp',
+    'Woods': 'woods.webp'
+}
+
 def get_maps_data():
     """Get maps data with caching"""
     import time
@@ -102,10 +117,63 @@ class MapButtonView(discord.ui.View):
             await interaction.response.edit_message(content=response, view=None)
         return callback
 
+
+
+
+class MapImageView(discord.ui.View):
+    def __init__(self):
+        super().__init__(timeout=60)
+        
+        # Create buttons directly from MAP_FILE_MAPPING (no API call needed)
+        for map_name in MAP_FILE_MAPPING.keys():
+            button = discord.ui.Button(label=map_name, style=discord.ButtonStyle.primary)
+            button.callback = self.make_callback(map_name)
+            self.add_item(button)
+        
+        # Add special button for Shoreline Resort if we have the file
+        if os.path.exists('mapas_webp/shorelineresort.webp'):
+            button = discord.ui.Button(label="Shoreline Resort", style=discord.ButtonStyle.secondary)
+            button.callback = self.make_callback('Shoreline Resort', 'shorelineresort.webp')
+            self.add_item(button)
+    
+    def make_callback(self, map_name, custom_file=None):
+        async def callback(interaction: discord.Interaction):
+            # Determine the file to send
+            filename = custom_file if custom_file else MAP_FILE_MAPPING.get(map_name)
+            
+            if not filename:
+                await interaction.response.send_message(f"❌ No se encontró el mapa para {map_name}", ephemeral=True)
+                return
+            
+            filepath = os.path.join('mapas_webp', filename)
+            
+            if not os.path.exists(filepath):
+                await interaction.response.send_message(f"❌ Archivo no encontrado: {filename}", ephemeral=True)
+                return
+            
+            # Send the map image
+            await interaction.response.defer()
+            file = discord.File(filepath, filename=filename)
+            await interaction.followup.send(
+                content=f"🗺️ **{map_name}**",
+                file=file
+            )
+        return callback
+
+
+
 @bot.event
 async def on_ready():
     logger.info(f'{bot.user} has connected to Discord!')
     logger.info(f'Bot is in {len(bot.guilds)} guilds')
+    
+    # Preload maps data to make first !b command instant
+    try:
+        logger.info('Preloading maps data...')
+        get_maps_data()
+        logger.info('Maps data preloaded successfully')
+    except Exception as e:
+        logger.error(f'Failed to preload maps data: {e}')
 
 @bot.event
 async def on_command_error(ctx, error):
@@ -583,6 +651,21 @@ async def bosses(ctx, *, query: str = None):
             logger.error(f"Error processing bosses command: {e}", exc_info=True)
             await ctx.send(f"An error occurred: {str(e)}")
 
+@bot.command(name='mapas', aliases=['m'])
+async def mapas(ctx):
+    """Show interactive buttons to view map images"""
+    logger.info(f'Mapas command received from {ctx.author}')
+    
+    try:
+        view = MapImageView()
+        await ctx.send("🗺️ **Selecciona un mapa para ver su imagen:**", view=view)
+        logger.info(f'Sent map selection buttons to {ctx.author}')
+    
+    except Exception as e:
+        logger.error(f"Error processing mapas command: {e}", exc_info=True)
+        await ctx.send(f"An error occurred: {str(e)}")
+
+
 @bot.command(name='help', aliases=['h'])
 async def help_command(ctx):
     """Show available commands"""
@@ -596,6 +679,7 @@ async def help_command(ctx):
         "`!bosses <mapa>` → Muestra bosses de ese mapa.\n"
         "`!bosses <nombre>` → Busca un boss por nombre.\n"
         "`!bosses all` → Lista compacta de todos los bosses.\n"
+        "`!mapas` o `!m` → Muestra botones para ver imágenes de mapas.\n"
         "`!ping` → Verifica si el bot está activo.\n"
     )
     await ctx.send(help_text)
