@@ -144,3 +144,57 @@ def format_trader_info(buy_for_list):
         result.append(flea)
     
     return result
+
+
+def get_ammo_by_caliber(caliber_search):
+    """
+    Get all ammo matching a caliber
+    Returns: list of tuples [(full_name, stats_dict), ...]
+    """
+    caliber_lower = caliber_search.lower()
+    matches = []
+    
+    for key, stats in AMMO_DATA.items():
+        if caliber_lower in stats['caliber'].lower():
+            matches.append((key, stats))
+    
+    # Sort by penetration (descending) for better overview
+    matches.sort(key=lambda x: int(x[1]['pen']) if x[1]['pen'].isdigit() else 0, reverse=True)
+    
+    return matches
+
+
+def format_ammo_compact(name, stats):
+    """
+    Format ammo info in a compact single line with fixed-width columns
+    Returns: "Name      | D:49 P:44 | 🟢1 🟢2 🟢3 🟡4 🟢5 🔴6"
+    """
+    # Extract ammo name by removing the caliber prefix
+    caliber = stats['caliber']
+    if name.startswith(caliber):
+        ammo_name = name[len(caliber):].strip()
+    else:
+        # Fallback: just take everything after first space
+        ammo_name = ' '.join(name.split()[1:]) if len(name.split()) > 1 else name
+    
+    # Truncate and pad to fixed width (15 chars)
+    if len(ammo_name) > 15:
+        ammo_name = ammo_name[:12] + "..."
+    ammo_name = ammo_name.ljust(15)
+    
+    # Format damage and pen with fixed width
+    damage = str(stats['damage']).rjust(3)
+    pen = str(stats['pen']).rjust(3)
+    
+    armor_str = format_armor_effectiveness(stats['armor'])
+    
+    # Put everything except emojis inside backticks for perfect alignment
+    return f"`{ammo_name} | D:{damage} P:{pen}` {armor_str}"
+
+
+def get_available_calibers():
+    """Get list of all unique calibers in the database"""
+    calibers = set()
+    for stats in AMMO_DATA.values():
+        calibers.add(stats['caliber'])
+    return sorted(calibers)

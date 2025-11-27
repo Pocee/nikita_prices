@@ -394,6 +394,67 @@ async def ammo(ctx, *, args: str = None):
             logger.error(f"Error processing ammo command: {e}", exc_info=True)
             await ctx.send(f"An error occurred: {str(e)}")
 
+@bot.command(name='aa')
+async def ammo_all(ctx, *, caliber: str = None):
+    """Show all ammo of a specific caliber"""
+    logger.info(f'Ammo-all command received from {ctx.author} for caliber: {caliber}')
+    
+    if not caliber:
+        await ctx.send("Please provide a caliber. Usage: `!aa <caliber>` (e.g., `!aa 5.45` or `!aa 7.62x39`)")
+        return
+    
+    async with ctx.typing():
+        try:
+            from ammo_helper import get_ammo_by_caliber, format_ammo_compact, get_available_calibers
+            
+            # Find all ammo of this caliber
+            matches = get_ammo_by_caliber(caliber)
+            
+            if not matches:
+                # Suggest available calibers
+                available = get_available_calibers()
+                caliber_list = "\n".join([f"• {c}" for c in available[:15]])
+                
+                embed = discord.Embed(
+                    title="❌ No Ammo Found",
+                    description=f"No ammo found for caliber '{caliber}'.\n\n**Available calibers:**\n{caliber_list}",
+                    color=0xff0000
+                )
+                
+                if len(available) > 15:
+                    embed.set_footer(text=f"...and {len(available)-15} more calibers")
+                
+                await ctx.send(embed=embed)
+                return
+            
+            # Get the actual caliber name from first match
+            actual_caliber = matches[0][1]['caliber']
+            
+            # Create embed
+            embed = discord.Embed(
+                title=f"🔫 {actual_caliber} Ammunition",
+                description=f"Found {len(matches)} ammo types (sorted by penetration)",
+                color=0x00ff00
+            )
+            
+            # Split into chunks if too many (Discord field limit is 1024 chars)
+            chunk_size = 15
+            for i in range(0, len(matches), chunk_size):
+                chunk = matches[i:i+chunk_size]
+                field_value = "\n".join([format_ammo_compact(name, stats) for name, stats in chunk])
+                
+                field_name = f"Ammo List" if i == 0 else f"Ammo List (cont.)"
+                embed.add_field(name=field_name, value=field_value, inline=False)
+            
+            embed.set_footer(text=f"Requested by {ctx.author.name} • Use !ammo <name> for details")
+            
+            await ctx.send(embed=embed)
+            logger.info(f'Sent caliber overview for {actual_caliber} ({len(matches)} ammo types)')
+        
+        except Exception as e:
+            logger.error(f"Error processing ammo-all command: {e}", exc_info=True)
+            await ctx.send(f"An error occurred: {str(e)}")
+
 @bot.command(name='bosses', aliases=['b'])
 async def bosses(ctx, *, query: str = None):
     """Get boss spawn information for Tarkov maps"""
