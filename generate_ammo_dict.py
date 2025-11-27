@@ -1,8 +1,10 @@
 import csv
 
 # Read CSV and generate Python dict file
-with open('ammo_stats.csv', 'r', encoding='utf-8') as f:
-    reader = csv.DictReader(f)
+# Using municiones_completas.csv directly as source of truth
+with open('municiones_completas.csv', 'r', encoding='utf-8') as f:
+    reader = csv.reader(f)
+    next(reader) # Skip header
     
     with open('ammo_data.py', 'w', encoding='utf-8') as out:
         out.write('# -*- coding: utf-8 -*-\n')
@@ -10,17 +12,43 @@ with open('ammo_stats.csv', 'r', encoding='utf-8') as f:
         out.write('AMMO_DATA = {\n')
         
         for row in reader:
-            ammo_name = row['Munición']
-            out.write(f'    {repr(ammo_name)}: {{\n')
-            out.write(f'        "caliber": {repr(row["Calibre"])},\n')
-            out.write(f'        "damage": {repr(row["Damage"])},\n')
-            out.write(f'        "pen": {repr(row["Pen Value"])},\n')
-            out.write(f'        "frag": {repr(row["Frag %"])},\n')
-            out.write(f'        "recoil": {repr(row["Recoil"])},\n')
-            out.write(f'        "accuracy": {repr(row["Accuracy"])},\n')
-            out.write(f'        "speed": {repr(row["Speed (m/s)"])},\n')
-            out.write(f'        "armor": [{repr(row["Class 1"])}, {repr(row["Class 2"])}, {repr(row["Class 3"])}, {repr(row["Class 4"])}, {repr(row["Class 5"])}, {repr(row["Class 6"])}]\n')
-            out.write('    },\n')
+            if not row or len(row) < 10:
+                continue
+                
+            # Basic fields (Always at fixed positions)
+            caliber = row[0]
+            ammo_name = row[1]
+            # Skip Buy/Sell (2, 3)
+            damage = row[4]
+            pen = row[5]
+            frag = row[6]
+            
+            # Dynamic fields (Read from end)
+            # Last 6 are armor classes
+            armor = row[-6:]
+            
+            # 7th from end is Speed
+            speed = row[-7]
+            
+            # Recoil/Accuracy are in between if they exist
+            # Standard row has 17 cols, Short row has 14
+            recoil = "N/A"
+            accuracy = "N/A"
+            
+            if len(row) >= 16:
+                recoil = row[7] # Usually after Frag
+                accuracy = row[8]
+            
+            out.write(f"    {repr(ammo_name)}: {{\n")
+            out.write(f"        'caliber': {repr(caliber)},\n")
+            out.write(f"        'damage': {repr(damage)},\n")
+            out.write(f"        'pen': {repr(pen)},\n")
+            out.write(f"        'frag': {repr(frag)},\n")
+            out.write(f"        'recoil': {repr(recoil)},\n")
+            out.write(f"        'accuracy': {repr(accuracy)},\n")
+            out.write(f"        'speed': {repr(speed)},\n")
+            out.write(f"        'armor': {repr(armor)}\n")
+            out.write("    },\n")
         
         out.write('}\n')
 
